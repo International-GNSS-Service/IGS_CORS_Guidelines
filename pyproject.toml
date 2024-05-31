@@ -34,6 +34,7 @@ mkdocs-autorefs = "^0.4.1"
 bump2version = "^1.0.1"
 pre-commit = "^3.2.0"
 mkdocs-open-in-new-tab = "^1.0.2"
+mkdocs-git-revision-date-localized-plugin = "^1.2.5"
 
 [tool.poetry.extras]
 test = [

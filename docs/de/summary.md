@@ -47,7 +47,7 @@ Dieser Abschnitt bietet einen Überblick über die obligatorischen und wünschen
 | Empfehlung | Klassifizierung  |
 | -------------- | --------------- |
 | Mehrfrequenz-Code- und Trägerphasenverfolgung für alle GNSS[^3] | :material-check-bold: |
-| Kontinuierliche Protokollierung der rohen GNSS-Daten | :fontawesome-solid-triangle-exclamation: |
+| Kontinuierliche Protokollierung der binären GNSS-Daten | :fontawesome-solid-triangle-exclamation: |
 | Echtzeit-Datenstreaming (RTCM) | :fontawesome-solid-triangle-exclamation: |
 | Verfolgung aller sichtbaren Satelliten (gesund und ungesund) mit einem Minimum von 5° Elevation (0° wird empfohlen) | :material-check-bold: |
 | Deaktivierung der Pseudorange- und Phasenglättung | :material-check-bold: |
