@@ -2,6 +2,8 @@ image: python:3.10
 
 # this job must be called 'pages' to advise GitLab to upload content to GitLab Pages
 pages:
+  tags:
+    - igs
   script:
     - pip install mkdocs-material
     - pip install mkdocs-include-markdown-plugin
