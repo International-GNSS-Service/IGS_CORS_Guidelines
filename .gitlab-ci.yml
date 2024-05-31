@@ -11,7 +11,7 @@ pages:
     - pip install mkdocstrings-python
     - pip install mkdocs-git-revision-date-localized-plugin
     - pip install mkdocs-open-in-new-tab
-    - mkdir public/en
+    - mkdir -p public/en
     - mkdocs build -f config/en/mkdocs.yml --site-dir public/en
   artifacts:
     paths:
