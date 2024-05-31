@@ -1,0 +1,95 @@
+site_name: IGS CORS Richtlinien
+site_url: https://gnss.git-pages.gfz-potsdam.de/igs-cors-guidelines
+repo_url: https://github.com/International-GNSS-Service/Resources/IGS-CORS-Guidelines
+repo_name: IGS-CORS-Guidelines
+# Copyright
+copyright: Copyright &copy; 2024 International GNSS Service
+docs_dir: '../../docs/de'
+site_dir: '../../generated/de' 
+
+nav:
+  - Home: index.md
+  - Deutsch: testing.md
+    # - Overview: project/index.md
+theme:
+  name: material
+  language: de
+  #logo: assets/logo.png
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    # - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: false
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tilde
+  - admonition
+  - def_list
+  - toc:
+      baselevel: 2
+      permalink: true
+  - meta
+  - tables
+  - footnotes
+  - abbr
+plugins:
+  - include-markdown
+  - search:
+      lang: de
+  # - open-in-new-tab
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/International-GNSS-Service/Resources/IGS-CORS-Guidelines
+      name: GitLab
+    - icon: material/email
+      link: "mailto:cb@igs.org"
+
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de

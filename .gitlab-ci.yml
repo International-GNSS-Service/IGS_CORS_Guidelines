@@ -1,0 +1,18 @@
+image: python:3.10
+
+# this job must be called 'pages' to advise GitLab to upload content to GitLab Pages
+pages:
+  script:
+    - pip install mkdocs-material
+    - pip install mkdocs-include-markdown-plugin
+    - pip install mkdocstrings
+    - pip install mkdocstrings-python
+    - pip install mkdocs-git-revision-date-localized-plugin
+    - pip install mkdocs-open-in-new-tab
+    - mkdir public/en
+    - mkdocs build -f config/en/mkdocs.yml --site-dir public/en
+  artifacts:
+    paths:
+      - public
+  only: 
+    - main
