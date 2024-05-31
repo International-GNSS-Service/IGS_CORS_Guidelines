@@ -1,20 +1,43 @@
-site_name: IGS CORS Richtlinien
+site_name: IGS CORS Guidelines
 site_url: https://gnss.git-pages.gfz-potsdam.de/igs-cors-guidelines
 repo_url: https://github.com/International-GNSS-Service/Resources/IGS-CORS-Guidelines
 repo_name: IGS-CORS-Guidelines
-# Copyright
 copyright: Copyright &copy; 2024 International GNSS Service
+
 docs_dir: '../../docs/de'
 site_dir: '../../generated/de' 
 
 nav:
-  - Home: index.md
-  - Deutsch: testing.md
-    # - Overview: project/index.md
+  - Introduction: index.md
+  - Summary: summary.md
+  - Establishment and Operation:
+    - Overview: establishment/index.md
+    - Signal Quality: establishment/signals.md
+    - Site Stability: establishment/stability.md
+    - Power and Communications: establishment/power_comms.md
+  - GNSS Equipment:
+    - Overview: equipment/index.md
+    - GNSS Receiver: equipment/receiver.md
+    - GNSS Antenna: equipment/antenna.md
+    - Antenna Cable: equipment/cable.md
+    - Meteorological Sensors: equipment/meteo_sensors.md
+  - Data and Metadata:
+    - Overview: data/index.md
+    - Signal Tracking and Data Recording: data/recording.md
+    - File Naming Conventions: data/filename.md
+    - Data Quality: data/quality.md
+    - Metadata: data/metadata.md
+    - Announcements: data/announcements.md
+  - Resources:
+    - Terms and Definitions: resources/terms.md
+    - References: resources/references.md
+    - Contributions: resources/contributions.md
+
 theme:
   name: material
   language: de
-  #logo: assets/logo.png
+  custom_dir: '../../overrides/' 
+  logo: assets/images/igs_logo.png
   palette:
     - scheme: slate
       primary: blue
@@ -32,7 +55,7 @@ theme:
     # - announce.dismiss
     - content.code.annotate
     - content.code.copy
-    # - content.tabs.link
+    - content.tabs.link
     - content.tooltips
     # - header.autohide
     - navigation.expand
@@ -61,6 +84,8 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: false
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.details
   - pymdownx.tilde
@@ -77,12 +102,21 @@ plugins:
   - include-markdown
   - search:
       lang: de
-  # - open-in-new-tab
+  - open-in-new-tab
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/International-GNSS-Service/Resources/IGS-CORS-Guidelines
-      name: GitLab
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/igsorg
+      name: LinkedIn
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/igsorg
+      name: X
+    - icon: fontawesome/brands/youtube
+      link: http://www.youtube.com/igsorg
+      name: Youtube
     - icon: material/email
       link: "mailto:cb@igs.org"
 
