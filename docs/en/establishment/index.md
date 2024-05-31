@@ -4,7 +4,7 @@ Every GNSS station will have site-specific issues to resolve. The general princi
 - Stability of the Antenna Reference Point (ARP),
 - Signal quality and data completeness,
 - Continuous and reliable power supply,
-- Reliable communication with [minimum latency](broadercaster-guidelines),
+- Reliable communication with [minimum latency][broadcaster-guidelines],
 - Infrastructure that resists the ambient environmental and security conditions.
 
 It is recommended to identify the usability of a proposed GNSS station in advance by taking care of the following aspects:

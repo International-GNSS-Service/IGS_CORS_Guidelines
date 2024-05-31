@@ -2,7 +2,7 @@ GNSS metadata is the information about the site, including site ownership, conta
 
 ## IGS Site Log/GeodesyML
 
-The IGS requires that CORS record and maintain their metadata in an IGS site log (ASCII) or GeodesyML, and that the metadata is made available to the IGS and to all users. The IGS uses a web application14 to maintain the station metadata.
+The IGS requires that CORS record and maintain their metadata in an IGS site log (ASCII) or GeodesyML, and that the metadata is made available to the IGS and to all users. The IGS uses a [web application](https://slm.igs.org) to maintain the station metadata.
 
 It is mandatory that the metadata is completed and published for all CORS to provide a consistent method of distributing relevant site information to analysis centres and users. A CORS operator may need to keep additional metadata for the site to aid internal management and operation.
 

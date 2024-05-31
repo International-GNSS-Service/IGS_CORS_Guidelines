@@ -1,6 +1,5 @@
 **IGS Guidelines for Continuously Operating Reference Stations (CORS)**
 
-
 *Version 1.0.0*
 
 [Join the IGS Network](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
@@ -20,3 +19,5 @@ On the occasion that a station does not comply with these Guidelines, but is sti
 [^1]: The IGS20.snx contains a listing of stations that contribute to the IGS reference frame.
 [^2]: The IGS actively coordinates station proposals with the regional networks of APREF, EPN, and
 SIRGAS.
+
+![Image title](assets/images/ccby40.png)
