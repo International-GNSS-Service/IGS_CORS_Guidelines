@@ -19,7 +19,7 @@ pages:
     - mkdocs build -f config/en/mkdocs.yml
     - mkdocs build -f config/de/mkdocs.yml
     - mv generated public
-    - ln -s public/en public
+    # - ln -s public/en public
   artifacts:
     paths:
       - public
