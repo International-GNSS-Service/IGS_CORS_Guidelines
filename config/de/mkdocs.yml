@@ -29,6 +29,7 @@ nav:
     - Metadaten: data/metadata.md
     - Ankündigungen: data/announcements.md
   - Ressourcen:
+    - Changelog: resources/changelog.md
     - Definitionen: resources/terms.md
     - Referenzen: resources/references.md
     - Beitrag: resources/contributions.md
