@@ -1,0 +1,3 @@
+Mit dem Aufkommen neuer GNSS-Systeme und -Signale sowie dem anerkannten Nutzen für die Gesellschaft entwickelt sich die GNSS-Technologie rasant. Formate ändern sich und Firmware-Versionen werden ständig angepasst und aktualisiert. Daher ist es wichtig, ein Gleichgewicht zwischen Technologie, Kosten, Effizienz und Nachfrage zu finden.
+
+Alle IGS-Hardwarekomponenten (Empfänger, Antenne plus Radom) müssen in der [rcvr_ant.tab](https://files.igs.org/pub/station/general/rcvr_ant.tab) aufgeführt sein. Dieses Dokument enthält Namenskonventionen für GNSS-Ausrüstung, die zur eindeutigen Identifizierung der Ausrüstung in verschiedenen Quellen (z.B. ANTEX, IGS Site Log, RINEX-Header) verwendet werden.

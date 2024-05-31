@@ -19,3 +19,5 @@ Falls eine Station nicht diesen Richtlinien entspricht, aber dennoch wertvoll f�
 
 [^1]: Die IGS20.snx enthält eine Liste der Stationen, die zum IGS-Referenzrahmen beitragen.
 [^2]: Das IGS koordiniert aktiv Stationsvorschläge mit den regionalen Netzwerken von APREF, EPN und SIRGAS.
+
+![Image title](assets/images/ccby40.png)

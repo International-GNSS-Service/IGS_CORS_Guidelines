@@ -1,0 +1,1 @@
+Dieser Abschnitt gibt Empfehlungen zur Zuverlässigkeit, Latenz und Qualität der von einer IGS CORS aufgezeichneten Daten. Darüber hinaus wird der Umgang mit Geräteänderungen in den entsprechenden Stationsmetadaten beschrieben.
