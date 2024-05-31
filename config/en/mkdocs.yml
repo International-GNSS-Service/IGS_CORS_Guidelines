@@ -122,8 +122,8 @@ extra:
 
   alternate:
     - name: English
-      link: /en/ 
+      link: /igs-cors-guidelines/en/ 
       lang: en
     - name: Deutsch
-      link: /de/
+      link: /igs-cors-guidelines/de/
       lang: de
