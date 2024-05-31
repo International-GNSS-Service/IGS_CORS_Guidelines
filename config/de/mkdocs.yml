@@ -8,30 +8,30 @@ docs_dir: '../../docs/de'
 site_dir: '../../generated/de' 
 
 nav:
-  - Introduction: index.md
-  - Summary: summary.md
-  - Establishment and Operation:
-    - Overview: establishment/index.md
-    - Signal Quality: establishment/signals.md
-    - Site Stability: establishment/stability.md
-    - Power and Communications: establishment/power_comms.md
+  - Einleitung: index.md
+  - Zusammenfassung: summary.md
+  - Aufbau und Betrieb:
+    - Übersicht: establishment/index.md
+    - Signalqualität: establishment/signals.md
+    - Stabilität: establishment/stability.md
+    - Strom und Kommunikation: establishment/power_comms.md
   - GNSS Equipment:
-    - Overview: equipment/index.md
+    - Übersicht: equipment/index.md
     - GNSS Receiver: equipment/receiver.md
     - GNSS Antenna: equipment/antenna.md
-    - Antenna Cable: equipment/cable.md
-    - Meteorological Sensors: equipment/meteo_sensors.md
-  - Data and Metadata:
-    - Overview: data/index.md
-    - Signal Tracking and Data Recording: data/recording.md
-    - File Naming Conventions: data/filename.md
-    - Data Quality: data/quality.md
-    - Metadata: data/metadata.md
-    - Announcements: data/announcements.md
-  - Resources:
-    - Terms and Definitions: resources/terms.md
-    - References: resources/references.md
-    - Contributions: resources/contributions.md
+    - Antennenkabel: equipment/cable.md
+    - Meteorologische Sensoren: equipment/meteo_sensors.md
+  - Daten und Metadaten:
+    - Übersicht: data/index.md
+    - Signal- und Datenaufzeichnung: data/recording.md
+    - Dateinamenkonventionen: data/filename.md
+    - Datenqualität: data/quality.md
+    - Metadaten: data/metadata.md
+    - Ankündigungen: data/announcements.md
+  - Ressourcen:
+    - Definitionen: resources/terms.md
+    - Referenzen: resources/references.md
+    - Beitrag: resources/contributions.md
 
 theme:
   name: material
