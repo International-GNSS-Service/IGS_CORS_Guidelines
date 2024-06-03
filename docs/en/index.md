@@ -16,8 +16,12 @@ The IGS Network Coordinator consults with the station operator through the appli
 
 On the occasion that a station does not comply with these Guidelines, but is still valuable to the IGS, a waiver may be granted to include the station within the IGS network, if agreed to by the SPC.
 
+## License
+
+![Image title](assets/images/ccby40.png)
+
+These Guidelines are licensed under CC-BY 4.0.
+
 [^1]: The IGS20.snx contains a listing of stations that contribute to the IGS reference frame.
 [^2]: The IGS actively coordinates station proposals with the regional networks of APREF, EPN, and
 SIRGAS.
-
-![Image title](assets/images/ccby40.png)
