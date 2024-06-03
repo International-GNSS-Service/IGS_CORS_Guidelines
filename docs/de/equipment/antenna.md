@@ -22,9 +22,9 @@ Die Antenne und die Antennenanschlüsse müssen wetterfest und korrosionsbestän
 
 Alle IGS-Antennen müssen eine gültige IGS-Absolutantennenkalibrierung aufweisen. Wenn eine Antenne individuell kalibriert wird, sollte die entsprechende ANTEX-Datei dem IGS zur Verfügung gestellt werden. Antennen sollten entweder durch Roboter oder in einer Kammer kalibriert werden.
 
-### ARP und Exzentrizitäten
+### Antennenreferenzpunkt und Exzentrizitäten
 
-Alle Antennenversatzmessungen müssen sich auf den ARP beziehen. Exzentrizitäten (Ost, Nord, Hoch) vom permanenten Positionsmarker zum ARP müssen mit einer Genauigkeit von ≤1 mm in den Metadaten und RINEX-Headern vermessen und angegeben werden.
+Alle Antennenversatzmessungen müssen sich auf den Antennenreferenzpunkt (ARP) beziehen. Exzentrizitäten (Ost, Nord, Hoch) vom permanenten Positionsmarker zum ARP müssen mit einer Genauigkeit von ≤1 mm in den Metadaten und RINEX-Headern vermessen und angegeben werden.
 
 ### Radom
 

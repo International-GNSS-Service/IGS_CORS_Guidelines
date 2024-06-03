@@ -1,4 +1,4 @@
-Dieser Abschnitt beschreibt Kriterien, die vor der Installation neuer IGS CORS berücksichtigt werden sollten. Sie basieren auf bewährten Praktiken, die von geodätischen Agenturen in den letzten Jahrzehnten festgelegt wurden.
+Dieser Abschnitt beschreibt Kriterien, die vor der Installation neuer IGS CORS berücksichtigt werden sollten. Sie basieren auf bewährten Praktiken, die von geodätischen Organisationen in den letzten Jahrzehnten festgelegt wurden.
 
 Jede GNSS-Station wird standortspezifische Probleme haben, die gelöst werden müssen. Die allgemeinen Grundsätze für die Standortwahl und das Design einer CORS umfassen:
 

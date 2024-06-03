@@ -17,8 +17,8 @@ nav:
     - Strom und Kommunikation: establishment/power_comms.md
   - GNSS Equipment:
     - Übersicht: equipment/index.md
-    - GNSS Receiver: equipment/receiver.md
-    - GNSS Antenna: equipment/antenna.md
+    - GNSS Empfänger: equipment/receiver.md
+    - GNSS Antennen: equipment/antenna.md
     - Antennenkabel: equipment/cable.md
     - Meteorologische Sensoren: equipment/meteo_sensors.md
   - Daten und Metadaten:

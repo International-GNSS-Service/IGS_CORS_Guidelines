@@ -18,7 +18,7 @@ RINEX-Header müssen mit den in den IGS-Site-Logs aufgezeichneten Metadaten übe
 | `MARKER NUMBER`       | IERS-DOMES-Nummer. Alle Buchstaben müssen in Großbuchstaben angegeben werden. | 50212M002 |
 | `MARKER TYPE`         | Muss auf GEODETIC gesetzt sein. ||
 | `OBSERVER`            | Es wird empfohlen, eine generische E-Mail-Adresse anzugeben. Die maximale Anzahl von Zeichen beträgt 20. | gnss@agency.org |
-| `AGENCY`              | Es wird empfohlen, die Agenturabkürzungen anzugeben, wie sie in den Abschnitten 11 und 12 des IGS-Site-Logs angegeben sind. Wenn mehrere Agenturen aufgeführt sind, sollten sie durch einen Schrägstrich ("/") getrennt werden. Maximale Anzahl von Zeichen beträgt 60. | OUSD/GFZ |
+| `AGENCY`              | Es wird empfohlen, die Organisationsabkürzungen anzugeben, wie sie in den Abschnitten 11 und 12 des IGS-Site-Logs angegeben sind. Wenn mehrere Organisationen aufgeführt sind, sollten sie durch einen Schrägstrich ("/") getrennt werden. Maximale Anzahl von Zeichen beträgt 60. | OUSD/GFZ |
 | `REC # / TYPE / VERS` | Alle Empfängerinformationen müssen mit den im IGS-Site-Log angegebenen Metadaten identisch sein. ||
 | `ANT # / TYPE`        | Alle Antenneninformationen müssen mit den im IGS-Site-Log angegebenen Metadaten identisch sein. ||
 | `APPROX POSITION XYZ` | Die ungefähren Koordinaten müssen mit einer Genauigkeit von 1 m mit denen im IGS-Site-Log angegebenen übereinstimmen. ||
