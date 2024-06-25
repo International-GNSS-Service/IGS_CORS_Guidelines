@@ -4,27 +4,27 @@ repo_url: https://git.gfz-potsdam.de/igs/igs-cors-guidelines
 repo_name: igs/igs-cors-guidelines
 copyright: Copyright &copy; 2024 International GNSS Service
 
-docs_dir: '../../docs/en'
-site_dir: '../../generated/en' 
+docs_dir: '../../docs/fr'
+site_dir: '../../generated/fr' 
 
 nav:
   - Introduction: index.md
-  - Summary: summary.md
-  - Establishment and Operation:
-    - Overview: establishment/index.md
-    - Signal Quality: establishment/signals.md
-    - Site Stability: establishment/stability.md
-    - Power and Communications: establishment/power_comms.md
-  - GNSS Equipment:
-    - Overview: equipment/index.md
-    - GNSS Receiver: equipment/receiver.md
-    - GNSS Antenna: equipment/antenna.md
-    - Antenna Cable: equipment/cable.md
-    - Meteorological Sensors: equipment/meteo_sensors.md
-  - Data and Metadata:
-    - Overview: data/index.md
+  - Résumé des Directives pour les CORS IGS: summary.md
+  - Installation et Opération des Stations GNSS Permanentes de l’IGS:
+    - Vue d'Ensemble: establishment/index.md
+    - Qualité du Signal: establishment/signals.md
+    - Stabilité du Site: establishment/stability.md
+    - Alimentation et Télécommunications: establishment/power_comms.md
+  - Équipements GNSS:
+    - Vue d'Ensemble: equipment/index.md
+    - Récepteur GNSS: equipment/receiver.md
+    - Antenne GNSS: equipment/antenna.md
+    - Câble d’Antenne: equipment/cable.md
+    - Capteurs Météorologiques: equipment/meteo_sensors.md
+  - Données et Métadonnées:
+    - Vue d'Ensemble: data/index.md
     - Signal Tracking and Data Recording: data/recording.md
-    - File Naming Conventions: data/filename.md
+    - Dénomination des Fichiers: data/filename.md
     - Data Quality: data/quality.md
     - Metadata: data/metadata.md
     - Announcements: data/announcements.md
@@ -36,7 +36,7 @@ nav:
 
 theme:
   name: material
-  language: en
+  language: fr
   custom_dir: '../../overrides/' 
   logo: assets/images/igs_logo.png
   palette:

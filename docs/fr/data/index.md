@@ -1,0 +1,1 @@
+This section gives recommendations about the reliability, latency and quality for the data recorded by an IGS CORS. Furthermore, it describes the handling of equipment changes in the corresponding station metadata.

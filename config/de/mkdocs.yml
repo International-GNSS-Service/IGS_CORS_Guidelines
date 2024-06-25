@@ -133,3 +133,6 @@ extra:
     - name: Deutsch
       link: /igs-cors-guidelines/de/
       lang: de
+    - name: Français
+      link: /igs-cors-guidelines/fr/
+      lang: fr
