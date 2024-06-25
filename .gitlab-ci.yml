@@ -18,6 +18,7 @@ pages:
     # - mkdir -p public/en
     - mkdocs build -f config/en/mkdocs.yml
     - mkdocs build -f config/de/mkdocs.yml
+    - mkdocs build -f config/fr/mkdocs.yml
     - mv generated public
     # - ln -s public/en public
   artifacts:
