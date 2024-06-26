@@ -1,27 +1,26 @@
-**IGS Guidelines for Continuously Operating Reference Stations (CORS)**
+**Directives pour les Stations GNSS Permanentes (CORS) de l’IGS**
 
-*Version 1.0.0*
+*Version 1.0.0-fr*
 
-[Join the IGS Network](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
+[Rejoindre le Réseau IGS](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
 
-The IGS tracking network is a collection of Continuously Operating Reference Stations (CORS) maintained and operated by a variety of different organisations pooling their resources under the umbrella of the IGS for the common good. Strict rules are inconsistent with the voluntary nature of the IGS. However, participating stations should adhere to an agreed set of standards and conventions, which ensure the provision of consistent, fit-for-purpose data. Of particular importance to the IGS products is the stable, long-term operation of the tracking network. Therefore, any changes to station configuration or the surrounding environment should be carefully planned to minimise discontinuities in the station’s position time series. Special consideration should be given to designated reference frame stations that contribute to the realisation of the International Terrestrial Reference Frame[^1] (ITRF).
-This document lists the minimum conventions that all IGS CORS must follow, as well as additional desirable characteristics, which enhance a station's value to the IGS. It is intended to be a useful reference to station owners and operators for planning and operating CORS. Suggestions for additions or changes to these Guidelines are welcomed at [cb@igs.org](mailto:cb@igs.org).
+Le réseau de l’IGS est un ensemble de stations GNSS permanentes (Continuously Operating Reference Stations, CORS) entretenues et maintenues par diverses organisations qui mutualisent leurs ressources sous l'égide de l'IGS pour le bien commun. L’établissement de règles strictes n’est pas compatible avec le volontariat dont dépend l'IGS. Cependant, les stations incluses dans le réseau de l’IGS doivent respecter un ensemble de normes et de conventions, afin de garantir la cohérence des données fournies et d’assurer leur utilisabilité. La stabilité et le fonctionnement à long terme du réseau de l’IGS sont particulièrement importants pour les produits de l'IGS. Par conséquent, les éventuelles modifications concernant la configuration des stations ou leurs environnements immédiats doivent être soigneusement planifiées, afin de minimiser les discontinuités dans les séries temporelles de positions des stations. Les stations de référence désignées comme contribuant à la réalisation du repère de référence terrestre international[^1] (International Terrestrial Reference Frame, ITRF) sont sujettes à une attention particulière.
+Ce document liste les caractéristiques minimales que toutes les CORS de l'IGS doivent satisfaire, ainsi que des caractéristiques supplémentaires souhaitables qui renforcent la valeur d'une station pour l'IGS. Ce document est destiné à être une référence utile pour les propriétaires et opérateurs de stations, notamment pour la planification et l'exploitation de ces CORS. Toutes suggestions, d'ajouts ou de modifications à ces directives, sont les bienvenues et doivent être envoyées à l'adresse suivante : [cb@igs.org](mailto:cb@igs.org).
 
-## Procedure for Becoming an IGS Station
+## Procédure pour Devenir une Station IGS
 
-The process for station owners or operators to follow in proposing a new IGS station is outlined in the document “[Procedure for Becoming an IGS Station](https://files.igs.org/pub/resource/guidelines/Procedure_for_Becoming_an_IGS_Station_v1.0.pdf)”. In planning the new station proposal, the station operator should carefully review the guidelines contained within this document. The responsible agency must have an expectation that the station will operate perpetually, preferably as part of a national or regional reference network. Stations located within the footprint of a national or regional reference network should first coordinate with the relevant reference network coordinator[^2]. Since most of the regional or national reference networks align with IGS standards, prior acceptance within such networks is considered favourable to the IGS. A sub-committee of the IGS Infrastructure Committee (Station Proposal Committee, SPC) will decide whether the proposed station should be accepted into the IGS tracking network based on location, instrumentation, operational characteristics, and whether it is relevant to any IGS Pilot Project or Working Group.
-The IGS Network Coordinator consults with the station operator through the application process and reviews compiled information for accuracy, completeness and compliance with these Guidelines.
+Afin de proposer une nouvelle station IGS, les propriétaires ou opérateurs de stations devront suivre le processus décrit dans le document "[Procedure for Becoming an IGS Station](https://files.igs.org/pub/resource/guidelines/Procedure_for_Becoming_an_IGS_Station_v1.0.pdf)". Le propriétaire de la station devra examiner attentivement les directives contenues dans ce document avant de soumettre une nouvelle station. L'organisme responsable de la station doit partir du principe que la station fonctionnera de manière perpétuelle, et de préférence dans le cadre d'un réseau de référence national ou régional. Pour les stations situées dans l’emprise d'un réseau de référence régional/national existant, le propriétaire devra d'abord consulter le coordinateur du réseau en question[^2]. En effet, s’assurer que la station est préalablement acceptée au sein de l’un de ces réseaux est considéré comme un signe favorable pour son acceptation au sein de l'IGS, puisque la plupart de ces réseaux de référence régionaux/nationaux se conforment déjà aux normes de l'IGS. La décision d’accepter ou non la nouvelle station au sein de l’IGS reviendra au “Station Proposal Committee (SPC)” du Comité d'Infrastructure de l'IGS, et sera fonction de son emplacement, de son instrumentation, de ses caractéristiques opérationnelles, et de sa pertinence pour certains Projets Pilotes (Pilot Projects, PP) ou Groupes de Travail (Working Groups, WG) de l'IGS.
+Le Coordinateur du Réseau IGS (IGS Network Coordinator) est disponible tout au long du processus de candidature, et examine les informations rassemblées par le propriétaire de la station afin de vérifier leur exactitude, leur exhaustivité, et leur conformité vis-à-vis des directives définies dans ce document.
 
-## Waivers for non-compliant Stations
+## Dérogations pour les Stations non Conformes
 
-On the occasion that a station does not comply with these Guidelines, but is still valuable to the IGS, a waiver may be granted to include the station within the IGS network, if agreed to by the SPC.
+Dans le cas où une station ne serait pas conforme aux directives définies dans ce document, mais se trouverait être particulièrement importante pour l'IGS, une dérogation peut être accordée afin d’inclure la station dans le réseau de l'IGS. Le SPC se réserve le droit d’établir ou non cette dérogation.
 
 ## License
 
 ![Image title](assets/images/ccby40.png)
 
-These Guidelines are licensed under CC-BY 4.0.
+Ces Directives sont licensiées sous CC-BY 4.0.
 
-[^1]: The IGS20.snx contains a listing of stations that contribute to the IGS reference frame.
-[^2]: The IGS actively coordinates station proposals with the regional networks of APREF, EPN, and
-SIRGAS.
+[^1]: Le fichier [IGS20.snx](ftp://igs-rf.ign.fr/pub/IGS20/IGS20.snx.gz) contient la liste des stations contribuant à la réalisation du repère de référence terrestre de l’IGS.
+[^2]: L’IGS travaille déjà habituellement avec les réseaux APREF, EPN, et SIRGAS lors de l’établissement de nouvelles stations IGS.
