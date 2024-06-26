@@ -1,6 +1,6 @@
 **IGS Richtlinien für permanent betriebene Referenzstationen (CORS)**
 
-*Version 1.0.0*
+*Version 1.0.0-de*
 
 *Übersetzt aus dem englischen Original "IGS Guidelines for Continuously Operating Reference Stations (CORS)"*
 
