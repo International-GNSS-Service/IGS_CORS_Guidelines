@@ -23,15 +23,15 @@ nav:
     - Capteurs Météorologiques: equipment/meteo_sensors.md
   - Données et Métadonnées:
     - Vue d'Ensemble: data/index.md
-    - Signal Tracking and Data Recording: data/recording.md
+    - Suivi de Signal et Enregistrement de Données: data/recording.md
     - Dénomination des Fichiers: data/filename.md
-    - Data Quality: data/quality.md
-    - Metadata: data/metadata.md
-    - Announcements: data/announcements.md
-  - Resources:
-    - Changelog: resources/changelog.md
-    - Terms and Definitions: resources/terms.md
-    - References: resources/references.md
+    - Qualité des Données: data/quality.md
+    - Métadonnées: data/metadata.md
+    - Annonces: data/announcements.md
+  - Ressources:
+    - Journal des Modifications: resources/changelog.md
+    - Termes et Définitions: resources/terms.md
+    - Références: resources/references.md
     - Contributions: resources/contributions.md
 
 theme:
