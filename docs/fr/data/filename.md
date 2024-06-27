@@ -1,120 +1,126 @@
-The IGS currently supports three major versions of the RINEX standard, RINEX v.2, RINEX v.3, and RINEX v.4. Every station operator is encouraged to transmit the latest available major/minor version. Newly proposed IGS CORS must submit their data in RINEX 3.04 at a minimum.
+L'IGS prend actuellement en charge trois versions majeures du format RINEX : RINEX v.2, RINEX v.3 et RINEX v.4. Chaque opérateur de station est encouragé à transmettre ses données dans la dernière version disponible du format RINEX. Les CORS IGS nouvellement proposés doivent soumettre leurs données au minimum dans le format RINEX 3.04.
 
 ## RINEX v.4/v.3
 
-[RINEX v.3](https://files.igs.org/pub/data/format/rinex305.pdf) and [RINEX v.4](https://files.igs.org/pub/data/format/rinex_4.01.pdf) data must be transmitted in the following file naming convention:
+Les fichiers au format [RINEX v.3](https://files.igs.org/pub/data/format/rinex305.pdf) ou [RINEX v.4](https://files.igs.org/pub/data/format/rinex_4.01.pdf) doivent être transmis avec les dénominations suivantes :
 
-*Observation and Meteorological Files*
+*Fichiers d’Observation et Fichiers Météorologiques*
 
 `SSSSMRCCC_S_YYYYDDDHHMM_DDU_FRU_DT.fff.cmp`
 
-*Navigation Files*
+*Fichiers de Navigation*
 
 `SSSSMRCCC_S_YYYYDDDHHMM_DDU_DT.fff.cmp`
 
-All elements of the main body of the file name must contain capitalised ASCII letters or numbers and all elements are of a fixed length and separated by an underscore “_”. The file type and compression fields (extension) use a period “.” as a separator and must be lowercase ASCII characters. Fields must be padded with zeros to fill the field width.
-In order to further reduce the size of observation files, the [Hatanaka compression toolkit](https://terras.gsi.go.jp/ja/crx2rnx.html) should be used.
+Tous les éléments de la première partie du nom de fichier doivent contenir des lettres ou des chiffres ASCII majuscules. Ces éléments sont de longueur fixe et séparés par un tiret bas « _ ». Les champs de type de fichier (fff) et de compression (cmp) sont séparés par des points « . » et doivent contenir des caractères ASCII minuscules. Chaque champ doit être complété, si nécessaire, par des zéros de sorte à occuper le nombre prévu de caractères (voir Tableau ci-dessous).
+
+Afin de réduire la taille des fichiers d'observation, la compression Hatanaka doit être utilisée. Pour plus d'informations, se référer à [https://terras.gsi.go.jp/ja/crx2rnx.html](https://terras.gsi.go.jp/ja/crx2rnx.html).
 
 === "SSSSMRCCC"
-    The Nine-character IGS Station Name
+    Nom de la Station IGS sur 9 Caractères
 
-    - SSSS: 4-character (existing) IGS station name
-    - M: monument or marker number (0-9)
-    - R: receiver number (0-9)
-    - CCC: ISO-3166 country or region code (alpha-3)
+    - SSSS : identifiant de station à 4 caractères
+    - M : numéro de point géodésique (0-9)
+    - R : numéro de récepteur (0-9)
+    - CCC : code de pays ou de région ISO-3166 (alpha-3)
     
-    Example: POTS00DEU
+    Example: POTS00DEU.
 
-    Note: To align with the SINEX format, marker and monument numbers other than 0 are currently not supported
+    Par souci de compatibilité avec le format SINEX, les numéros de point géodésique autres que 0 ne sont actuellement pas acceptés.
                                                                                                                                                                    |
 === "S"
-    Data source
+    Source des Données
 
-    Supported are R (from receiver using vendor or other software) and S (RTCM or another stream format)
+    Sont autorisés : R (données issues du récepteur via le logiciel constructeur ou un autre logiciel) ou S (données issues d’un flux RTCM ou dans un autre format)
 
 === "YYYYDDDHHMM"
 
-    Start time
+    Date de Début
 
-    - YYYY: Gregorian year (e.g., 2024)
-    - DDD: Day of the year (e.g., 260)
-    - HHMM: Hours and minutes of the day (e.g., 1000)
+    - YYYY : année grégorienne (e.g., 2024)
+    - DDD : jour de l’année (001-366, e.g., 260)
+    - HHMM : heure et minute (0000-2359, e.g., 1000)
 
-    It is preferred to use the nominal start time of the file. However, using the actual start time of a file is acceptable.
+    Il est préférable d'utiliser l'heure nominale de début du fichier, mais acceptable d’utiliser l'heure de début réelle des données.
 
 === "DDU"
-    File Period
+    Durée du Fichier
 
-    - DD: File period
-    - U: Unit of the file period
-    - Accepted are 15M, 01H, 01D
+    - DD : Durée du fichier
+    - U : Unité de durée
+    - Sont acceptés : 15M, 01H, 01D
 
 === "FRU"
-    Data Frequency
+    Fréquence des Données
 
-    - FR: Data frequency
-    - U: Unit of the data frequency
-    - Accepted are 01S for high-rate data and 30S or 15S for hourly/daily data
-
-    Not required for RINEX navigation files
+    - FR : Fréquence des données
+    - U : Unité de fréquence
+    - Sont acceptés : 01S pour les données haute fréquence et 30S ou 15S pour les données horaires et journalières
+    
+    Ce champ n’est pas requis pour les fichiers RINEX de navigation.
 
 === "DT"
-    Data Type
+    Type de Données
 
-    - Two characters represent the type
-    - D: Satellite System (allowed are G, R, E, C, J,S,Iand M(ixed))
-    - T: RINEX file type (allowed are O, N, M)
+    - D : Système GNSS (sont autorisés : G, R, E, C,J, S, I et M(ixte))
+    - T : Type de fichier RINEX (sont autorisés : O, N, M)
 
-    Example: MO
+    Exemple : MO.
 
 === "fff"
-    Format of the file. Supported are rnx (RINEX) and crx (compressed RINEX)
-
+    Format du Fichier
+    
+    - Sont autorisés : rnx (RINEX) and crx (RINEX compressé).
+    
 === "cmp"
-    Compression format. Supported is gzip (gz).
+    Format de Compression
+    
+    - Seul gzip (gz) est autorisé.
 
 ## RINEX v.2
 
-RINEX v.2 (Gurtner, 2007) data must be transmitted in the following file naming convention:
+Les fichiers au format RINEX v.2 (Gurtner, 2007) doivent être transmis avec la dénomination suivante :
 
 `ssssdddf.yyt`
 
-The table below describes each element of this file naming convention. Stations transmitting RINEX v.2 files are encouraged to provide gzip compressed files. Even if files are sent in Z-compression, IGS data centres will recompress them and make them publicly available using gzip.
-
+Le Tableau ci-dessous décrit les différents éléments de cette dénomination. Les stations transmettant des fichiers RINEX v.2 sont encouragées à fournir des fichiers compressés à l’aide de gzip. Si les fichiers sont envoyés en compression Z, les centres de données IGS les recompresseront et les rendront accessibles en compression gzip (Romero & Ruddick, IGS, 2020).
 
 === "ssss"
-    The 4-character IGS station name
+    Nom de la Station IGS sur 4 Caractères
 
-    Example: pots
+    Exemple : pots.
 
 === "ddd"
-    Day of the year of the first record
+    Jour de l’année de la première observation (001-366).
 
-    Example: 260
+    Exemple : 260.
 
 === "f"
-    File sequence number/character within day
+    Durée du Fichier
     
-    - Daily files (30 seconds): f=0
-    - Hourly files (30 seconds):
-        - f=a (00:00:00 to 00:59:30),
+    - Fichiers journaliers (30 seconds) : f=0
+    - Fichiers horaires (30 seconds) : 
+        - f=a (00:00:00 to 00:59:30), 
         - f=b (01:00:00 to 01:59:30), 
         - ...
         - f=x (23:00:00 to 23:59:30)
-    - High-rate files (15M, 1 Hz):
+    - Fichiers haute-fréquence (15M, 1 Hz):
         - f=a00 (00:00:00 to 00:14:59)
-        - f=a15 (00:15:00 to 00:29:59) ...
-        - f=m30 (12:30:00 to 12:44:59) ...
+        - f=a15 (00:15:00 to 00:29:59)
+        - ...
+        - f=m30 (12:30:00 to 12:44:59)
+        - ...
         - f=x45 (23:45:00 to 23:59:59)
-
+    
 === "yy"
-    Two-digit year (e.g., 24)
+    Année (sur 2 chiffres, e.g., 24).
 
 === "t"
-    File Type, allowed file types are:
-
-    - O: Observation file
-    - D: Hatanaka compressed observation file
-    - N: GPS navigation file
-    - G: GLONASS navigation file
-    - M: Meteorological file
+    Type de fichier.
+    
+    Sont autorisés :
+    - O : Fichier d’observation
+    - D : Fichier d’observation en compression Hatanaka
+    - N : Fichier de navigation GPS
+    - G : Fichier de navigation GLONASS
+    - M : Fichier météorologique

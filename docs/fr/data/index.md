@@ -1,1 +1,1 @@
-This section gives recommendations about the reliability, latency and quality for the data recorded by an IGS CORS. Furthermore, it describes the handling of equipment changes in the corresponding station metadata.
+Cette section donne des recommandations sur la fiabilité, la latence et la qualité des données enregistrées par une CORS IGS. Elle décrit en outre la gestion des changements d'équipement dans les métadonnées des stations.

@@ -1,41 +1,43 @@
-The bare minimum that an IGS CORS needs to provide is daily RINEX observation files with a sampling rate of 30 seconds. A sampling rate of 15 seconds is acceptable but not encouraged. Furthermore, station operators are asked to provide RINEX navigation files[^1].
+Une CORS IGS doit fournir au strict minimum des fichiers RINEX d'observation journaliers avec un taux d'échantillonnage de 30 secondes. Un taux d'échantillonnage de 15 secondes est acceptable mais pas encouragé. Il est également demandé aux opérateurs de stations de fournir les fichiers RINEX de navigation[^1].
 
-It is recommended to provide hourly RINEX files with a sampling rate of 30 seconds. Newly proposed IGS stations are encouraged to provide hourly RINEX files with a sampling rate of 30 seconds and high-rate (1Hz) RINEX files with a duration of 15 minutes if feasible.
+Il est recommandé de fournir également des fichiers RINEX horaires avec un taux d'échantillonnage de 30 secondes. Les stations IGS nouvellement proposées sont de plus encouragées à fournir, si possible, des fichiers RINEX à haute fréquence (1 Hz) d'une durée de 15 minutes.
 
-Each RINEX data file has to be sent to at least two of the global IGS data centres[^2]. If the station is already included in a regional network (e.g., APREF, EPN, SIRGAS) and data is publicly available, the transmission to one of the global data centres is sufficient. Data transmission will be coordinated through the IGS Network Coordinator.
+Chaque fichier RINEX doit être envoyé à au moins deux des centres de données mondiaux de l'IGS[^2]. Si la station fait déjà partie d'un réseau régional (par exemple APREF, EPN, SIRGAS) et que les données sont accessibles au public, la transmission vers un seul des centres de données mondiaux est suffisante. La transmission des données sera coordonnée par le coordinateur du réseau IGS.
 
-After a communication outage, missing data files need to be submitted to the data centre(s). An announcement explaining details about the outage shall be sent to the community (see section [Announcements](../announcements) for more information).
+Après une interruption de communication, les fichiers de données manquants doivent être soumis au(x) centre(s) de données. Une annonce expliquant les détails de la panne devra être envoyée à la communauté (voir la section [Annonces](../announcements) pour plus d'informations).
 
-The listing below highlights key figures for the signal tracking, data recording and data transmission that should be aimed by each IGS CORS.
+Les listes ci-dessous résument les critères devant être satisfaits par une CORS IGS en termes de suivi des signaux GNSS et d'enregistrement et de transmission des données.
 
-**Signal Tracking and Data Archival**
+**Suivi des Signaux et Archivage des Données**
 
-- 99% of the available epochs in a day are fully observed, recorded and archived (<15 minutes of outage per day).
-- 99% of the available epochs in a year are fully observed, recorded and archived (<91 hours of total outage per year).
+- Au moins 99 % des données disponibles au cours d'une journée doivent être entièrement observées, enregistrées et archivées (<15 minutes de données manquantes par jour).
+- Au moins 99 % des données disponibles au cours d'une année doivent être entièrement observées, enregistrées et archivées (<91 heures de données manquantes par année).
 
-**Data Transmission**
+**Transmission des Données**
 
-- The latency of an hourly data file for archival should be <5 minutes after the end of each hour.
-- The latency of a daily data file for archival should be <30 minutes after the end of the day.
+- La latence d'archivage d'un fichier de données horaire doit être <5 minutes après la fin de chaque heure.
+- La latence d'archivage d'un fichier de données journalier doit être <30 minutes après la fin de chaque jour.
 
-**Resubmission after Outage**
+**Retransmission après une Panne**
 
-- All missing daily files need to be resubmitted as soon as possible.
-- Missing hourly files need to be resubmitted at the minimum for the last complete three days.
+- Tous les fichiers journaliers manquants doivent être retransmis aussitôt que possible.
+- Les fichiers horaires manquants doivent être retransmis au minimum pour les trois derniers jours.
 
-## High-Rate Data
+## Données Haute Fréquence
 
-In support of Near-Real-Time (NRT) applications, station operators are encouraged to provide 15-minute RINEX observation and navigation files with a data frequency of 1 Hz (if applicable). They could be either generated from real-time streams or recorded by the receiver.
-The stations participating in the high-rate data provision are encouraged to provide the files with a delay of 5 minutes or less from the last recorded observation epoch.
+En appui aux applications en temps quasi réel (NRT), les opérateurs de stations sont encouragés à fournir des fichiers RINEX d'observation et de navigation d’une durée de 15 minutes avec une fréquence d’échantillonnage de 1 Hz. Ceux-ci peuvent être soit générés à partir d’un flux en temps réel, soit enregistrés par le récepteur.
 
-## Real-Time Data
+Les stations fournissant des données haute fréquence sont encouragées à fournir les fichiers avec un délai de moins de 5 minutes après la dernière époque d'observation enregistrée.
 
-In addition to meeting the standards of a conventional IGS station, Real-Time stations are required to stream GNSS observation data with a minimum data interval of 1 Hz. All newly proposed IGS stations must be able to stream data in real-time unless they are considered to be of value to contribute to the reference frame (e.g., by being co-located to a SLR or VLBI station) or are located in a region of geographical need.
-The recommendations that need to be fulfilled by an IGS Real-Time station are described in section 2 of the [Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf).
+## Données en Temps Réel
 
-## Meteorological Data
+En plus de répondre aux normes d'une station IGS conventionnelle, les stations temps réel doivent diffuser des données d'observation GNSS avec une fréquence minimum de 1 Hz. Toutes les stations IGS nouvellement proposées doivent être capables de diffuser des données en temps réel, à moins qu'elles ne soient considérées comme utiles au repère de référence terrestre (par exemple, en étant colocalisées avec une station SLR ou VLBI) ou qu'elles soient situées dans une région peu couverte par le réseau IGS.
 
-It is recommended to install precise meteorological equipment on an IGS CORS. Sensor specific guidelines are described in Section [Meteorological Sensors](../equipment/meteo_sensors.md). As a minimum, the data must include pressure and temperature measurements and shall be distributed in RINEX format. The RINEX files should be transmitted on the same schedule as the RINEX observation files (hourly and/or daily).
+Les spécifications devant être respectées par une station IGS temps réel sont décrites dans la section 2 des « [Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf) ».
 
-[^1]: To reduce the number of files, it recommended to send mixed navigation files that contain all navigation data in a single file.
-[^2]: A list of IGS global data centres can be found on the IGS website: [https://igs.org/data-access/#data-centers](https://igs.org/data-access/#data-centers)
+## Données Météorologiques
+
+Il est recommandé d’installer des capteurs météorologiques précis sur les sites CORS IGS. Les directives relatives aux capteurs météorologiques sont décrites dans la section 4.4. Au minimum, les données doivent inclure des mesures de pression et de température et doivent être distribuées au format RINEX. Les fichiers RINEX météorologiques doivent être transmis selon le même calendrier que les fichiers RINEX d'observation (horaires et/ou journaliers).
+
+[^1]: Pour réduire le nombre de fichiers, il est recommandé de fournir des fichiers de navigation mixtes contenant l’ensemble des données de navigation.
+[^2]: Une liste des centres de données mondiaux de l’IGS peut être trouvée sur le site web de l’IGS : [https://igs.org/data-access/#data-centers](https://igs.org/data-access/#data-centers).

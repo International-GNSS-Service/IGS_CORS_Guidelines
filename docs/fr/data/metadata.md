@@ -1,64 +1,64 @@
-GNSS metadata is the information about the site, including site ownership, contact details, monument information, the site coordinates and a history of the installed equipment. Reliable and current metadata is central to the management and use of a GNSS station, and is the responsibility of the station operator.
+Les métadonnées sont des informations sur le site CORS concernant le propriétaire du site, ses coordonnées, la monumentation du site, sa localisation et l’historique des équipements installés. Des métadonnées fiables et à jour sont essentielles à la gestion et à l'utilisation d'une station GNSS et relèvent de la responsabilité de l'opérateur de la station.
 
-## IGS Site Log/GeodesyML
+## Site Log IGS / GeodesyML
 
-The IGS requires that CORS record and maintain their metadata in an IGS site log (ASCII) or GeodesyML, and that the metadata is made available to the IGS and to all users. The IGS uses a [web application](https://slm.igs.org) to maintain the station metadata.
+L'IGS exige que chaque opérateur de station renseigne ces métadonnées dans un fichier site log IGS (ASCII) ou au format GeodesyML, et que les métadonnées soient mises à la disposition de l'IGS et de l’ensemble des utilisateurs. L'IGS utilise une [application web](https://slm.igs.org) pour gérer les métadonnées des stations.
 
-It is mandatory that the metadata is completed and published for all CORS to provide a consistent method of distributing relevant site information to analysis centres and users. A CORS operator may need to keep additional metadata for the site to aid internal management and operation.
+Il est impératif que les métadonnées de toutes les CORS IGS soient complètes et publiques de sorte que les centres d’analyse IGS et autres utilisateurs puissent aisément accéder aux informations qui leur sont nécessaires. Un opérateur de CORS peut avoir à fournir des métadonnées supplémentaires à propos du site afin de faciliter son opération et sa maintenance.
 
-All IGS stations are identified using a unique Nine-Character abbreviation. The first four characters should be globally unique, and the name is usually chosen to represent the suburb, town or locality of the site. The GNSS operator should check with the IGS Network Coordinator that the proposed four-character identifier for a new CORS is not already in use. Furthermore, each IGS CORS needs to apply for an [IERS DOMES number](domes-request). Make sure that the intended four-character code has not already been used for other geodetic techniques by checking the [IERS DOMES number list](domes-list).
+Toutes les stations IGS sont identifiées par un code unique à neuf caractères. Les quatre premiers caractères de ce code doivent eux-mêmes constituer un identifiant unique, qui se réfère généralement à la ville ou localité où se trouve le site. Pour chaque nouvelle station, l'opérateur doit vérifier auprès du coordinateur du réseau IGS que l'identifiant à quatre caractères prévu n'est pas déjà utilisé. De plus, chaque nouvelle CORS IGS doit être demander l'affectation d’un [numéro DOMES IERS](domes-request). Assurez-vous que le code à quatre caractères prévu n'a pas déjà été utilisé pour d'autres techniques géodésiques en consultant [la liste des numéros DOMES](domes-list).
 
-## RINEX Headers
+## En-Têtes des Fichiers RINEX
 
-RINEX headers must match the metadata recorded in the IGS site log. RINEX files shall be resubmitted in case of metadata discrepancies. All information in the RINEX header must be ASCII encoded. The usage of characters from other encoding standards (e.g., UTF-8) can lead to a shift of the header elements while decoding, e.g., by using diacritics. The table below lists the mandatory RINEX header elements provided for each RINEX file.
+Les en-têtes des fichiers RINEX doivent correspondre aux métadonnées renseignées dans le site log IGS. Les fichiers RINEX doivent être soumis à nouveau en cas de divergence dans les métadonnées. Toutes les informations contenues dans les en-têtes des fichiers RINEX doivent être codées en ASCII. L'utilisation de caractères provenant d'autres normes de codage (par exemple des signes diacritiques codés en UTF-8) peut conduire à un décalage des éléments d'en-tête lors du décodage. Le Tableau ci-dessous répertorie les éléments d'en-tête devant être obligatoirement présents dans chaque fichier RINEX.
 
 | RINEX Header Element  | Recommendations | Example |
 | --------------------- | --------------- | ------- |
-| `MARKER NAME`         | <ul><li>It is recommended to use the nine-character station code.</li><li>Alternatively, the 4-character station code can be used.</li><li>All letters must be provided in uppercase.</li></ul> | OUS200NZL<br>OUS2 |
-| `MARKER NUMBER`       | IERS Domes number. All letters must be provided in uppercase. | 50212M002 |
-| `MARKER TYPE`         | Must be set to GEODETIC. ||
-| `OBSERVER`            | It is recommended to provide a generic email address. The maximum number of characters is 20. | gnss@agency.org |
-| `AGENCY`              | It is recommended to provide the agency abbreviations as stated in the IGS site log sections 11 and 12. If multiple agencies are listed, they should be separated by a slash (“/”). Maximum number of characters is 60. | OUSD/GFZ |
-| `REC # / TYPE / VERS` | All receiver information must be identical to the metadata stated in the IGS site log. ||
-| `ANT # / TYPE`        | All antenna information must be identical to the metadata stated in the IGS site log. ||
-| `APPROX POSITION XYZ` | The approximate coordinates shall agree to 1 m accuracy to the ones stated in the IGS site log. ||
-| `ANTENNA: DELTA H/E/N` | The antenna eccentricities must match the ones stated in the IGS site log. ||
+| `MARKER NAME`         | <ul><li>Il est recommandé de renseigner l’identifiant à 9 caractères de la station.</li><li>L’identifiant à 4 caractère de la station peut également être utilisé.</li><li>Toutes les lettres doivent être en majuscules.</li></ul> | OUS200NZL<br>OUS2 |
+| `MARKER NUMBER`       | Numéro DOMES IERS. Toutes les lettres doivent être en majuscules. | 50212M002 |
+| `MARKER TYPE`         | Doit être : GEODETIC. ||
+| `OBSERVER`            | Il est recommandé de fournir une adresse email générique. Le nombre maximum de caractères est de 20. | gnss@agency.org |
+| `AGENCY`              | Il est recommandé de renseigner l’abréviation du nom de l’organisme telle qu’indiquée dans les sections 11 et 12 du site log IGS de la station. Si plusieurs organismes sont répertoriés, ils doivent être séparés par une barre oblique (« / »). Le nombre maximum de caractères est de 60. | OUSD/GFZ |
+| `REC # / TYPE / VERS` | Toutes les informations sur le récepteur doivent être identiques aux métadonnées renseignées dans le site log IGS de la station. ||
+| `ANT # / TYPE`        | Toutes les informations sur l’antenne doivent être identiques aux métadonnées renseignées dans le site log IGS de la station. ||
+| `APPROX POSITION XYZ` | Les coordonnées approchées doivent correspondre à mieux que 1 m avec celles renseignées dans le site log IGS de la station. ||
+| `ANTENNA: DELTA H/E/N` | L’excentricité de l’antenne doit être identique à celle renseignée dans le site log IGS de la station. ||
 
-## Digital Photographs
+## Photographies Numériques
 
-Every CORS must provide pictures of the antenna installation in the four cardinal directions (preferably 8 pictures every 45°), the monument and its vicinity. They need to be updated after each event or hardware change on the site.
-The pictures must be labelled and named in the following file naming convention:
+Chaque CORS IGS doit fournir des photographies de l'installation de l'antenne dans les quatre directions cardinales (de préférence 8 photographies séparées de 45° en azimuth), du monument et de ses environs. Les photographies doivent être mises à jour après chaque événement ou changement d’équipement.
 
+Les photographies doivent être nommées de la façon suivante :
 `SSSSMRCCC_YYYYMMDD_D[D].fff`
 
-The table below describes the elements of this convention. All elements are separated by an underscore (“_”).
+Le Tableau ci-dessous explicite les différents éléments de cette dénomination. Ces éléments doivent être séparés par des tirets bas (“_”).
 
 | Component   | Description | Example |
 | ----------- | ----------- | ------- |
-| `SSSSMRCCC` | The nine-character station code. | NYA200NOR |
-| `YYYYMMDD`  | Date of admission (year, month, day) without separation and zero-padded. | 20210131 |
-| `D[D]`      | <ul><li>Cardinal direction: N, E, S, W and a two-way combination of them</li><li>Antenna serial number: AS</li><li>Antenna mount: AM</li><li>Receiver: R</li><li>Monument: M</li></ul> | N (North)<br>SE (South-East) |
-| `fff`      | The format of the graphic file. Supported are JPEG and PNG. | .jpg |
+| `SSSSMRCCC` | L’identifiant à 9 caractères de la station. | NYA200NOR |
+| `YYYYMMDD`  | Date de prise de vue (année, mois, jour), sans séparation. | 20210131 |
+| `D[D]`      | <ul><li>Direction cardinale : N, E, S, W ou une combinaison de deux de ces caractères</li><li>Numéro de série de l’antenne : AS</li><li>Support d’antenne : AM</li><li>Récepteur : R</li><li>Monument : M</li></ul> | N (Nord)<br>SE (Sud-Est) |
+| `fff`       | Format de la photographie. Sont acceptés : JPEG et PNG. | .jpg |
 
-Alternatively, pictures can be made available to a website hosted by the station operator or the parent organisation.
+Les photos peuvent être également être mises à disposition sur un site web hébergé par l'opérateur de la station ou son organisme.
 
-## Individual Antenna Calibrations
+## Étalonnages Individuels d’Antennes
 
-Although not mandatory, it is recommended to provide individual antenna calibrations. They are useful for activities and investigations for different IGS working groups (e.g., Antenna Working Group). The corresponding ANTEX file should be made available to the IGS Network Coordinator.
+Bien que cela ne soit pas obligatoire, il est recommandé de fournir un étalonnage individuel pour chaque antenne installée sur une CORS IGS. Les étalonnages individuels sont utiles pour les travaux de différents Composants de l'IGS, tel que l’Antenna Committee. Le fichier ANTEX correspondant devra être mis à disposition du coordinateur du réseau IGS.
 
-## Data Protection Compliance
+## Protection des Données
 
-The European Union and other countries implemented regulations on the protection of personal data. Since the IGS is a voluntary federation without a strong legal representation, it is not in the interest of the IGS to deal with the subtleties that each of the regulations bring with them.
-We therefore ask, that all personal information in the metadata (IGS site logs/GeodesyML) and RINEX header (full names and email addresses) get replaced by generic names and email lists, e.g.:
+L'Union Européenne et d'autres pays ont mis en œuvre des réglementations sur la protection des données personnelles. L’IGS étant une fédération volontaire sans représentation juridique, il n’est pas dans son intérêt de s’occuper des subtilités qui viennent avec chacune de ces réglementations.
+Nous demandons donc que toutes les informations personnelles contenues dans les métadonnées (site logs IGS/GeodesyML) et les en-têtes des fichiers RINEX (noms complets et adresses e-mail) soient remplacées par des noms génériques et des listes de diffusion, par exemple :
 
-- IGS Site Log/GeodesyML:
+- Site logs IGS / GeodesyML :
     - Contact Name: “Agency” Network operator
     - E-Mail: gnss@agency.org
-- RINEX Header:
+- En-Tête de Fichier RINEX :
     - Observer: gnss@agency.org
     - Comments with disclaimer information
 
-Stations proposed to the IGS will need to follow these rules prior to their acceptance. Station operators who are updating the metadata of their stations will also be asked to use data protection compliant contact information.
+Les stations proposées à l'IGS devront se conformer à ces règles pour être acceptées. Les opérateurs qui mettent à jour les métadonnées de leurs stations sont également invités à utiliser des coordonnées conformes à la protection des données.
 
 [domes-request]: https://itrf.ign.fr/en/network/domes/request
 [domes-list]: https://itrf.ign.fr/en/network/list

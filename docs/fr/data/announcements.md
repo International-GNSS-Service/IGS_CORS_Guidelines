@@ -1,14 +1,12 @@
-The IGS uses an email distribution system to inform the community about events related to the network. A complete list of IGS mailing lists can be found on the IGS website17. Station operators are requested to subscribe and track the following lists to remain informed about the activities in the IGS:
-
+L'IGS utilise un système de listes de diffusion d’e-mails pour informer la communauté des événements relatifs au réseau de stations. Une liste complète des listes de diffusion IGS est disponible sur le site web de l'IGS. Les opérateurs de stations sont priés de s'abonner et de suivre les listes suivantes pour rester informés des activités de l'IGS :
 - IGS Mail
 - IGS Station
 
-An advisory to the IGS Station list must be sent in the following cases:
+Un avis doit être envoyé à la liste IGS Station dans les cas suivants :
+- Événement pouvant affecter la position estimée de la station ou nécessiter une mise à jour de ses métadonnées, par exemple : changement d’antenne, de radôme, de récepteur, des réglages du récepteur, d’horloge externe, ou de l’environnement (déboisement, construction de bâtiments, _etc._).
+- Les changements d’équipement prévus (par exemple, changement d'antenne ou de récepteur) doivent être annoncés au moins un jour à l’avance.
+- Interruption de données prévue pour durer plus d’une semaine.
+- Mise à jour des métadonnées IGS.
+- Nouvelle soumission de données pour cause de données corrompues ou de métadonnées incorrectes.
 
-- Station status message that could affect position solutions or require an IGS metadata update, e.g., changes in antenna, radome, receiver and receiver settings, cabling, frequency standard or environment (tree clearing, building constructions, etc.),
-- Planned changes to the station (e.g., antenna or receiver change) should be announced at least one day prior to the change,
-- Expected data outage for more than one week,
-- Corrected IGS metadata,
-- Resubmission of data due to corruption or incorrect metadata.
-
-Briefly describe in the message what has changed. The subject of the email must start with the nine-character station code so that the email can be archived automatically.
+Décrivez brièvement dans le message ce qui a changé. L'objet de l'e-mail doit commencer par le code à neuf caractères de la station afin que l'e-mail puisse être archivé automatiquement.
