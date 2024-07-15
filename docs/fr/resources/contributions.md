@@ -1,4 +1,3 @@
-Contributions are more than welcome.
+Les contributions à ces directives sont plus que bienvenues.
 
-We are looking for people who can translate these guidelines to different languages.
-We aim to be as inclusive as possible.
+Nous recherchons des personnes capables de traduire ces directrices dans différentes langues. Notre objectif est d'être le plus inclusif possible.
