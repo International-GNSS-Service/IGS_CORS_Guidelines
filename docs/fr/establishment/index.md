@@ -1,21 +1,22 @@
-This section describes criteria to consider before installing new IGS CORS. They are compiled based on common practices determined by geodetic agencies in the last decades.
-Every GNSS station will have site-specific issues to resolve. The general principles for the location and design of a CORS include:
+Cette section décrit les critères à considérer avant d'installer une nouvelle station GNSS permanente (CORS). Ils sont basés sur les pratiques mises au point par les instituts géographiques durant les dernières décennies.
 
-- Stability of the Antenna Reference Point (ARP),
-- Signal quality and data completeness,
-- Continuous and reliable power supply,
-- Reliable communication with [minimum latency][broadcaster-guidelines],
-- Infrastructure that resists the ambient environmental and security conditions.
+Toute station GNSS se trouvera confrontée à des problèmes spécifiques au site d'installation. Parmi les principes généraux pour le choix du site et le design de la station, on citera :
 
-It is recommended to identify the usability of a proposed GNSS station in advance by taking care of the following aspects:
+- la stabilité du point de référence de l'antenne (ARP),
+- la qualité du signal et la complétude des données,
+- une alimentation électrique continue et fiable,
+- des systèmes de télécommunication fiables et avec une [latence minimale][broadcaster-guidelines], et
+- une infrastructure résistante aux conditions environnementales et satisfaisant diverses questions de sécurité.
 
-- Significant signal obstructions,
-- Potential multipath and Radio Frequency Interference (RFI) sources,
-- Access restrictions,
-- Access to available power and communications,
-- Cable length requirements,
-- Human, pest and environmental site security issues,
-- Potential changes to sky visibility from tree growth and development at sites nearby,
-- Site foundation suitability (this may require additional geophysical or structural analysis).
+Il est recommandé d'évaluer à l'avance à quel point une nouvelle station GNSS sera exploitable, en considérant notamment les points suivants :
+
+- l'obstruction des signaux GNSS (masques),
+- les sources potentielles de multi-trajets et d'interférence de radiofréquences (RFI),
+- les restrictions d'accès,
+- l'accès à une alimentation électrique et à des systèmes de télécommunication,
+- la longueur de câble requise,
+- les questions de sécurité sur le site (humaines, animales, ou environnementales),
+- les changements potentiels de visibilité du ciel (pousse des arbres, constructions proches), et
+- la stabilité du site d'installation (ce qui peut requérir une étude géophysique ou structurelle).
 
 [broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf

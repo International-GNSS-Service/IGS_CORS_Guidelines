@@ -1,45 +1,45 @@
-The quality of a satellite signal arriving at a GNSS antenna has a crucial impact on the performance of a GNSS station. There are a variety of factors that can influence the signal quality that are outlined in the following sections.
+La qualité du signal provenant d'un satellite et étant reçu par une antenne GNSS a un impact crucial sur la performance de ladite station. Les facteurs pouvant influencer la qualité du signal sont listés dans les sections suivantes.
 
-## Sky Visibility
+## Visibilité du Ciel
 
-GNSS stations should be located on sites with minimal obstructions above the local horizon. Above 10° elevation, the station should not show any obstructions. The receiver shall be set to track all satellites within an elevation mask of 0°.
+Les stations GNSS doivent être installées sur des sites permettant une visibilité du ciel la moins obstruée possible. Au-dessus de 10° d'élévation, le ciel de la station ne doit contenir aucun masque. Le récepteur doit être configuré pour recevoir les signaux de tous les satellites, avec un angle de coupure réglé à 0° (voir aussi la Section 4.1).
 
-## Multipath
+## Multi-Trajets
 
-The interference by multipath occurs when a GNSS satellite signal arrives at the antenna on different pathways. The signal arrives once directly from the satellite, and additionally by having reflected off other surfaces.
-Multipath sources can be either natural or artificial. Table 2 lists possible sources known to generate strong multipath.
+Les multi-trajets désignent l'interférence qui se produit quand un même signal GNSS arrive à une antenne en ayant suivi plusieurs chemins. Le même signal peut en effet arriver directement du satellite, mais aussi avoir été réfléchi par certaines surfaces aux alentours de l'antenne.
 
-Artificial Sources:
+Les sources de multi-trajets peuvent être naturelles ou artificielles. On liste ci-dessous les sources dont on sait qu'elles peuvent générer des multi-trajets importants.
 
-- Metal panels and signs
-- Roofs
-- Walls of buildings
-- Mesh fencing
-- Solar panels
+Sources Artificielles :
 
-Natural Sources:
+- Panneaux en Métal
+- Toits
+- Murs de Bâtiments
+- Clôtures en Métal
+- Panneaux Solaires
 
-- Trees (especially wet ones)
-- Water surfaces such as lakes, rivers, etc.
+Sources Naturelles :
 
-Avoid these reflective bodies at GNSS sites at any time. Suspected sources of multipath should be a minimum of 20 metres away from the GNSS antenna and below 5° elevation.
+- Arbres (en particulier en cas d'humidité)
+- Plans d'Eau (lacs, rivières, etc.)
 
-## Radio Interference Sources
+Il est impératif de n'avoir aucun de ces éléments proches d'une station GNSS, afin d'éviter les réflexions pouvant générer des multi-trajets. Les sources pouvant générer des multi-trajets doivent être éloignées à plus de 20 mètres de l'antenne GNSS et situées sous 5° d'élévation.
 
-Common sources of Radio Frequency Interference (RFI) include:
+## Sources d'Interférences de Radiofréquences (RFIs)
 
-- Radio, television and mobile phone transmitters,
-- Microwave data links,
-- Power lines,
-- Transformers.
+Les sources pouvant causer des interférences de radiofréquences (RFIs) peuvent être, par exemple :
 
-Directional transmitters, particularly microwave data links pointing toward the CORS site, can cause significant RFI.
-Among other parameters, the effect of RFI is a function of the frequency, radiated power, and distance to the source. The effect of RFI is significantly increased when the RFI is a harmonic of a GNSS signal frequency.
+- des émetteurs radio, de télévision, et pour téléphones mobiles, 
+- des flux de données micro-ondes,
+- des lignes électriques, ou
+- des transformateurs électriques.
 
-Therefore, it is difficult to define a safe operating distance from an RFI source. RFI can be difficult to confirm and specialist advice may be necessary if RFI is suspected. If RFI is confirmed, and cannot be mitigated at a proposed CORS site, an alternate CORS site should be considered.
+Les transmetteurs directionnels, en particulier les transferts micro-ondes pointant dans la direction du site, peuvent causer des RFIs importantes. Les effets des RFIs sont fonction de divers paramètres dont la fréquence, la puissance émise et la distance à la source. Les effets des RFIs sont particulièrement importants quand leur source émet à une harmonique d'une fréquence porteuse d'un signal GNSS.
+
+Par conséquent, il est difficile de définir un critère de distance minimale par rapport à une source de RFIs. Il peut être compliqué de confirmer la présence de RFIs dans un signal enregistré, et l'avis d'un spécialiste peut être nécessaire si des RFIs sont suspectées. Si des RFIs sont confirmées sur un site envisagé pour une nouvelle stations GNSS permanente, et ne peuvent pas être atténuées, alors un autre site devra être considéré.
 
 !!! note "Note"
 
-    RFI sources do not only affect the GNSS signals received at the antenna, but also the wireless (radio or mobile phone network) transmission of site data. Where a CORS site is transmitting data via radio link, the radio transmission may itself be a source of RFI on the GNSS signals at the antenna.
+Les sources de RFI n'affectent pas seulement les signaux GNSS, mais aussi les réseaux sans fil, notamment ceux utilisés pour la transmission de données (via radio ou réseau de télécommunication). De plus, quand le site transmet ses données via radio, la transmission elle-même peut être une source de RFIs sur les signaux GNSS.
 
-Prior to the final installation of a monument, it is recommended to test the multipath environment and check whether RFI sources are present at the GNSS site. This could be done by installing the GNSS equipment on a temporary tripod and investigating the data quality.
+Avant l'installation d'un monument permanent, il est recommandé de tester l'environnement en termes de multi-trajets, et de vérifier si des sources de RFIs sont présentes sur le site. Pour ce faire, on pourra installer l'équipement GNSS sur un trépied temporaire afin d'analyser la qualité des données ainsi acquises.
