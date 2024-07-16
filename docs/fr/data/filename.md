@@ -119,6 +119,7 @@ Le Tableau ci-dessous décrit les différents éléments de cette dénomination.
     Type de fichier.
     
     Sont autorisés :
+    
     - O : Fichier d’observation
     - D : Fichier d’observation en compression Hatanaka
     - N : Fichier de navigation GPS

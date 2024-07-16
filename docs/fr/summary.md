@@ -1,117 +1,117 @@
-This section presents an overview of the mandatory and desirable recommendations that need to be fulfilled by a CORS to join the IGS network. They are intended to be applicable both to current active IGS stations and to proposed stations. Full compliance with these Guidelines is clearly desired by the IGS, however where guidelines cannot be complied with, station operators are asked to consult with the Infrastructure Committee. Detailed information about the shown recommendations can be found in subsequent chapters of these Guidelines.
+Cette section résume les directives obligatoires et souhaitables que doit respecter une station GNSS permanente (Continuously Operating Reference Station, CORS) pour rejoindre le réseau IGS. Celles-ci sont destinées à s'appliquer aussi bien aux stations IGS actuellement en activité qu'aux stations nouvellement proposées. Dans la mesure du possible, les propriétaires de stations doivent se conformer intégralement à ces directives ; si ce n'est pas possible, ils sont invités à consulter le Comité d'Infrastructure de l'IGS. Les sections suivantes donnent de plus amples détails sur les recommandations résumées ici.
 
-!!! info "Legend"
+!!! info "Légende"
 
-    :material-check-bold: This feature is the minimum required one.
+    :material-check-bold: Minimum Requis
 
-    :fontawesome-solid-triangle-exclamation: This feature is encouraged but not mandatory.
+    :fontawesome-solid-triangle-exclamation: Souhaitable
 
-    :x: This feature is not recommended.
+    :x: Non Recommandé
 
-## General
+## Général
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Station belongs to a national/regional geodetic network[^1]                                      | :fontawesome-solid-triangle-exclamation: |
-| Station planned and installed for continuous and permanent operation                             | :material-check-bold: |
-| Station’s operating agency maintains full capability to repair, upgrade and maintain the station | :material-check-bold: |
+| La station appartient à un réseau géodésique national/régional[^1].   | :fontawesome-solid-triangle-exclamation: |
+| La station est installée pour une opération permanente et en continu. | :material-check-bold: |
+| L'agence opérant la station dispose de toutes les capacités pour les réparations, les améliorations, et l'entretien courant de la station. | :material-check-bold: |
 
-## Foundation and Location
+## Fondations et Site d'Installation
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Bedrock or massive concrete base | :material-check-bold: |
-| Mounted on buildings or similar structures[^2] | :x: |
-| Clear sky view with limited obstructions above 10° | :material-check-bold: |
-| Site is clear from signal obstructions or RFI | :material-check-bold: |
-| Site is clear from reflective material | :material-check-bold: |
+| Roche-mère ou fondation en béton massif.                              | :material-check-bold: |
+| Bâtiments ou structures similaires[^2].                               | :x: |
+| Vue dégagée sur le ciel sans masque au-dessus de 10° d'élévation.     | :material-check-bold: |
+| Le site d'installation est exempt d'obstructions de signal et de RFI. | :material-check-bold: |
+| Le site d'installation est exempt de matériaux réfléchissants.        | :material-check-bold: |
 
-## Monumentation and Mounting
+## Monument et Supports
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Concrete pillar or braced (tri-, quad-, ...)pod monuments | :material-check-bold: |
-| (Steel) mounts attached to building | :x: |
-| The mount locks the antenna in place to maintain orientation and level | :material-check-bold: |
-| The mount allows the antenna to be removed and returned within 0.5 mm and 1° of its original location and orientation | :material-check-bold: |
+| Pilier en ciment ou trépied/quadripode renforcé.                                                | :material-check-bold: |
+| Support en acier fixé à un bâtiment.                                                            | :x: |
+| Support maintenant l'antenne en place afin de conserver une orientation et un niveau constants. | :material-check-bold: |
+| Support permettant à l'antenne d'être remplacée sans modifier sa position de plus de 0,5 mm ni son orientation de plus de 1°. | :material-check-bold: |
 
-## Power and Communication
+## Alimentation et Télécommunications
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Ensure continuous operation of all communication devices | :fontawesome-solid-triangle-exclamation: |
-| Ensure remotely controlled access to the receiver | :material-check-bold: |
+| Assurer le fonctionnement continu de tous les dispositifs de télécommunication. | :fontawesome-solid-triangle-exclamation: |
+| Assurer le contrôle à distance de l'accès au récepteur.                         | :material-check-bold: |
 
-## Receiver
+## Récepteur
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Multi-frequency code and carrier phase tracking for all GNSS[^3] | :material-check-bold: |
-| Continuous logging of raw GNSS data | :fontawesome-solid-triangle-exclamation: |
-| Real-Time data streaming (RTCM) | :fontawesome-solid-triangle-exclamation: |
-| All-in-view satellite tracking (healthy and unhealthy) with a minimum of 5° elevation (0° is encouraged) | :material-check-bold: |
-| Disabling pseudorange and phase smoothing | :material-check-bold: |
-| Disabling multipath mitigation | :material-check-bold: |
-| Ability to store a reasonable amount of raw data (depending on local circumstances) | :material-check-bold: |
+| Suivi des codes et des phases porteuses de tous les GNSS à toutes les fréquences[^3]. | :material-check-bold: |
+| Enregistrement continu des données GNSS brutes.                                       | :fontawesome-solid-triangle-exclamation: |
+| Dissémination des données en temps réel (RTCM).                                       | :fontawesome-solid-triangle-exclamation: |
+| Suivi de tous les satellites visibles (qu'ils soient déclarés utilisables ou non) jusqu'à un minimum d'élévation de 5° (0° étant recommandé). | :material-check-bold: |
+| Désactivation des options de lissage de mesures de code et de phase (pseudorange and phase smoothing). | :material-check-bold: |
+| Désactivation des options d'atténuation des multi-trajets.                            | :material-check-bold: |
+| Espace de stockage disponible pour une quantité raisonnable de données brutes (en fonction des circonstances locales). | :material-check-bold: |
 
-## Antenna
+## Antenne
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Use of an antenna with an IGS calibrated absolute antenna phase centre (mean calibration) as included in the official [IGS ANTEX](https://files.igs.org/pub/station/general/igs20.atx) | :material-check-bold: |
-| Individually calibrated absolute antenna phase centre | :fontawesome-solid-triangle-exclamation: |
-| Antenna levelled and oriented within 5° to true North | :material-check-bold: |
-| Antenna radome protection | :x: |
+| Utilisation d'un type d'antenne disposant d'un étalonnage moyen absolu dans l'[ANTEX officiel de l'IGS](https://files.igs.org/pub/station/general/igs20.atx). | :material-check-bold: |
+| Utilisation d'une antenne disposant d'un étalonnage individuel absolu. | :fontawesome-solid-triangle-exclamation: |
+| Antenne horizontale et orientée à moins de 5° du nord géographique.    | :material-check-bold: |
+| Utilisation d'un radôme de protection.                                 | :x: |
 
-## Data
+## Données
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Data must be provided in RINEX format[^4] | :material-check-bold: |
-| ^^ Real-Time stream is available[^5]:^^<br>RTCM 3 MSM5 stream for real-time applications[^6] | :material-check-bold: |
-| Data must be resubmitted to the data centres after communication outage | :material-check-bold: |
-| RINEX data must be generated on-board the receiver ^^or^^ from native binary file | :material-check-bold: |
-| File completeness target | 99% |
+| Les données doivent être fournies au format RINEX[^4]. | :material-check-bold: |
+| ^^ Si une dissémination en temps réel est disponible[^5]^^, le format doit être “RTCM 3 MSM5 stream for real-time applications”[^6]. | :material-check-bold: |
+| Dans le cas d'une coupure des systèmes de télécommunication, les données non transmises doivent être soumises aux centres de données dès le retour de ces systèmes. | :material-check-bold: |
+| Le fichier RINEX doit être généré par le récepteur ^^ou^^ traduit du fichier binaire natif. | :material-check-bold: |
+| Taux de complétude des fichiers ciblé : | 99% |
 
-### High-rate RINEX files
+### Fichiers RINEX Haute-Fréquence
 
-| Recommendation |             | Classification  |
-| -------------- | ------------| --------------- |
-| Provision      |             | :fontawesome-solid-triangle-exclamation: |
-| Latency        | < 5 minutes | :material-check-bold: |
-| Sampling rate  | 1 Hz        | :material-check-bold: |
-| Duration       | 15 minutes  | :material-check-bold: |
+| Recommandation                 |              | Classification |
+| ------------------------------ | ------------ | -------------- |
+| Disponibilité de ces fichiers. |              | :fontawesome-solid-triangle-exclamation: |
+| Latence.                       | < 5 minutes  | :material-check-bold: |
+| Fréquence d'échantillonnage.   | 1 Hz         | :material-check-bold: |
+| Durée.                         | 15 minutes   | :material-check-bold: |
 
-### Hourly RINEX files
+### Fichiers RINEX Horaires
 
-| Recommendation |             | Classification  |
-| -------------- | ------------| --------------- |
-| Provision      |             | :fontawesome-solid-triangle-exclamation: |
-| Latency        | < 5 minutes | :material-check-bold: |
-| Sampling rate  | 30 seconds  | :material-check-bold: |
+| Recommandation                 |              | Classification |
+| ------------------------------ | ------------ | -------------- |
+| Disponibilité de ces fichiers. |              | :fontawesome-solid-triangle-exclamation: |
+| Latence.                       | < 5 minutes  | :material-check-bold: |
+| Fréquence d'échantillonnage.   | 30 secondes  | :material-check-bold: |
 
-### Daily RINEX files
+### Fichiers RINEX Journaliers
 
-| Recommendation |             | Classification  |
-| -------------- | ------------| --------------- |
-| Provision      |             | :material-check-bold: |
-| Latency        | < 30 minutes| :material-check-bold: |
-| Sampling rate  | 30 seconds  | :material-check-bold: |
+| Recommandation                 |              | Classification |
+| ------------------------------ | ------------ | -------------- |
+| Disponibilité de ces fichiers. |              | :material-check-bold: |
+| Latence.                       | < 30 minutes | :material-check-bold: |
+| Fréquence d'échantillonnage.   | 30 secondes  | :material-check-bold: |
 
-## Metadata
+## Métadonnées
 
-| Recommendation | Classification  |
+| Recommandation | Classification  |
 | -------------- | --------------- |
-| Complete and up-to-date metadata in IGS site log/GeodesyML format | :material-check-bold: |
-| Unique nine-character station identifier approved by IGS | :material-check-bold: |
-| Assigned with unique IERS DOMES number | :material-check-bold: |
-| Update of IGS site log within 24 hours of applied station change(s) | :material-check-bold: |
-| RINEX header matches the information in the IGS metadata record | :material-check-bold: |
-| Provision of pictures of the antenna installation in the 4 cardinal directions (N, E, S, W) | :material-check-bold: |
+| Métadonnées complètes et à jour au format GeodesyML ou IGS site log. | :material-check-bold: |
+| Identifiant de station à 9 caractères approuvé par l'IGS.            | :material-check-bold: |
+| Identifiant DOMES attribué par l'IERS.                               | :material-check-bold: |
+| Dans le cas d'une modification de la station, mise à jour du site log de la station sous 24 heures. | :material-check-bold: |
+| En-tête des fichiers RINEX correspondant aux métadonnées dans le site log de la station.            | :material-check-bold: |
+| Photos de l'installation de l'antenne dans les 4 directions cardinales (N, E, S, O).                | :material-check-bold: |
 
-[^1]: Mandatory for regional CORS in the footprint of APREF, EPN, and SIRGAS.
-[^2]: Waivers may be granted after revision by the SPC.
-[^3]: New stations shall track all available frequency code and carrier phases.
-[^4]: For new stations: RINEX 3.04 is the minimum accepted version. RINEX 2.11 is not accepted.
-[^5]: New stations are highly encouraged to provide real-time streams.
-[^6]: MSM7 is encouraged.
+[^1]: Obligatoire pour les CORS situées dans les emprises des réseaux APREF, EPN, et SIRGAS.
+[^2]: Une dérogation peut être accordée après évaluation par le SPC.
+[^3]: Les nouvelles stations doivent suivre tous les codes et phases porteuses disponibles.
+[^4]: Pour les nouvelles stations, RINEX 3.04 est la version minimale requise ; les données au format RINEX 2.11 ne seront pas acceptées.
+[^5]: Il est fortement encouragé que les nouvelles stations fournissent des flux de données en temps réel.
+[^6]: Le format MSM7 est encouragé.

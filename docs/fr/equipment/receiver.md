@@ -1,29 +1,28 @@
-The listing below gives an overview of recommended receiver characteristics at the date of issue of these Guidelines. Newly built GNSS stations proposed for the IGS shall fulfil all of the listed features. Station operators of established stations that cannot be upgraded at the moment, shall keep these recommendations in mind for future updates.
+On résume ci-dessous les caractéristiques recommandées pour les récepteurs GNSS à la date de publication de ces directives. Les nouvelles stations GNSS proposées pour l'IGS doivent satisfaire tous les critères répertoriés. Les opérateurs de stations existantes se trouvant dans l'impossibilité de mettre celles-ci à niveau pour le moment doivent garder ces recommandations à l'esprit pour les futures mises à jour.
 
-### Signal Tracking
+### Suivi des Signaux
 
-- Tracking of all available carrier phase, pseudorange, signal-to-noise (SNR) per frequency. Doppler observations are optional.
-- No smoothing of pseudorange measurements.
-- Multipath mitigation must be disabled.
-- Newly proposed stations must track at least GPS, GLONASS, Galileo, and BeiDou[^1].
-- Capability to observe future signals is preferred.
-- Receiver set to track signals down to 0° elevation (5° is acceptable).
-- Receiver set to all-in-view tracking (including unhealthy satellites).
-- Receiver synchronises the actual instant of observation with GPS time to within 1 millisecond of the full second epoch.
+- Tous les signaux de code, de phase et les rapports signal sur bruit (SNR) disponibles sur toutes les fréquences doivent être suivis. Les observations de Doppler sont facultatives.
+- Le lissage des mesures de code doit être désactivé.
+- L'atténuation des multi-trajets doit être désactivée.
+- Les nouvelles stations doivent suivre au moins les constellations GPS, GLONASS, Galileo et BeiDou[^1].
+- La capacité à observer les signaux futurs est appréciée.
+- Le récepteur doit être réglé pour suivre les signaux jusqu'à une élévation minimum de 0° (5° est acceptable).
+- Le récepteur doit être réglé pour suivre tous les satellites en vue (y compris les satellites déclarés inutilisables).
+- Le récepteur doit synchroniser l'instant réel de ses observations à moins de 1 milliseconde des secondes entières (en temps GPS).
 
-### Output
+### Flux de Sortie
 
-- Current RTCM SC-104 at 1 Hz on multiple ports.
-- Proprietary raw data streaming.
-- Capable of streaming data to multiple locations.
+- Utilisation du protocole RTCM SC-104 le plus récent, à 1 Hz, sur plusieurs ports.
+- Diffusion des données brutes au format constructeur.
+- Capacité de diffuser les données vers plusieurs destinations.
 
-### Logging
+### Enregistrements
 
-- Continuous logging of raw unsmoothed data.
-- Logging of RINEX data (minimum: 30 sec sampling, if not generated outside the receiver).
-- Logging of input sensor data.
-
+- Enregistrement continu des données brutes non lissées.
+- Enregistrement des données RINEX (échantillonnage toutes les 30 secondes minimum), si elles ne sont pas générées en dehors du récepteur.
+- Enregistrement des données du capteur d'entrée.
 
 The firmware of a GNSS receiver is a computer software that controls the tracking of the device. As with any other software, a firmware might be updated to either fix bugs or to improve the tracking capabilities of the receiver. Before upgrading, a new firmware should be thoroughly tested and only be considered on stations where it benefits from the change. In general, the receiver should be operated with the latest stable firmware within 6 months of its release.
 
-[^1]: Stations located in the footprint of the regional satellite systems QZSS and IRNSS shall additionally track those. SBAS tracking capability is encouraged.
+[^1]: Les stations situées dans la zone de couverture des systèmes satellitaires régionaux QZSS et IRNSS doivent également suivre ces derniers. La capacité de suivi SBAS est encouragée.
