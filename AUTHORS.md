@@ -13,8 +13,9 @@
 
 FR:
 
-- Léo Martire
+- Camille Martire
 - Paul Rebischung
+- Fernand Balé
 
 DE:
 
