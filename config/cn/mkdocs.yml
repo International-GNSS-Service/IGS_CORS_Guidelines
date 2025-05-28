@@ -7,7 +7,7 @@ copyright: Copyright &copy; 2024 International GNSS Service
 docs_dir: '../../docs/cn'
 site_dir: '../../generated/cn'
 
-导航:
+nav:
   - 1 引言: index.md
   - 2 IGS CORS指南概述: summary.md
   - 3 IGS CORS的建立与运行:
@@ -36,7 +36,7 @@ site_dir: '../../generated/cn'
 
 theme:
   name: material
-  language: cn
+  language: zh
   custom_dir: '../../overrides/' 
   logo: assets/images/igs_logo.png
   palette:
@@ -105,14 +105,14 @@ markdown_extensions:
 plugins:
   - include-markdown
   - search:
-      lang: cn
+      lang: zh
   - open-in-new-tab
   - git-revision-date-localized:
       enable_creation_date: true
 extra:
   social:
     - icon: fontawesome/brands/gitlab
-      link: https://git.gfz-potsdam.cn/igs/igs-cors-guidelines
+      link: https://git.gfz-potsdam.de/igs/igs-cors-guidelines
       name: GitLab
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/igsorg
@@ -130,12 +130,12 @@ extra:
     - name: English
       link: /igs-cors-guidelines/en/ 
       lang: en
-    - name: China
-      link: /igs-cors-guidelines/cn/ 
-      lang: cn
     - name: Deutsch
       link: /igs-cors-guidelines/de/
       lang: de
     - name: Français
       link: /igs-cors-guidelines/fr/
       lang: fr
+    - name: 中国
+      link: /igs-cors-guidelines/cn/ 
+      lang: zh

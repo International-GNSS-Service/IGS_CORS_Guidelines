@@ -136,3 +136,6 @@ extra:
     - name: Français
       link: /igs-cors-guidelines/fr/
       lang: fr
+    - name: 中国
+      link: /igs-cors-guidelines/cn/ 
+      lang: zh
