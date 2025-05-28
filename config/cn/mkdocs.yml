@@ -1,0 +1,141 @@
+site_name: IGS CORS Guidelines
+site_url: https://igs.git-pages.gfz-potsdam.de/igs-cors-guidelines
+repo_url: https://git.gfz-potsdam.de/igs/igs-cors-guidelines
+repo_name: igs/igs-cors-guidelines
+copyright: Copyright &copy; 2024 International GNSS Service
+
+docs_dir: '../../docs/cn'
+site_dir: '../../generated/cn'
+
+导航:
+  - 1 引言: index.md
+  - 2 IGS CORS指南概述: summary.md
+  - 3 IGS CORS的建立与运行:
+    - 概述: establishment/index.md
+    - 3.1 信号质量: establishment/signals.md
+    - 3.2 台站稳定性: establishment/stability.md
+    - 3.3 供电与通信: establishment/power_comms.md
+  - 4 GNSS 设备:
+    - 概述: equipment/index.md
+    - 4.1 GNSS接收机: equipment/receiver.md
+    - 4.2 GNSS天线: equipment/antenna.md
+    - 4.3 天线电缆: equipment/cable.md
+    - 4.4 气象传感器: equipment/meteo_sensors.md
+  - 5 数据和元数据:
+    - 概述: data/index.md
+    - 5.1 信号跟踪与数据记录: data/recording.md
+    - 5.2 文件命名规则: data/filename.md
+    - 5.3 数据质量: data/quality.md
+    - 5.4 原数据: data/metadata.md
+    - 5.5 公告: data/announcements.md
+  - 资源:
+    - 更新日志: resources/changelog.md
+    - 术语与定义: resources/terms.md
+    - 参考文献: resources/references.md
+    - 贡献: resources/contributions.md
+
+theme:
+  name: material
+  language: cn
+  custom_dir: '../../overrides/' 
+  logo: assets/images/igs_logo.png
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    # - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: false
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tilde
+  - admonition
+  - def_list
+  - toc:
+      baselevel: 2
+      permalink: true
+  - meta
+  - tables
+  - footnotes
+  - abbr
+plugins:
+  - include-markdown
+  - search:
+      lang: cn
+  - open-in-new-tab
+  - git-revision-date-localized:
+      enable_creation_date: true
+extra:
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://git.gfz-potsdam.cn/igs/igs-cors-guidelines
+      name: GitLab
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/igsorg
+      name: LinkedIn
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/igsorg
+      name: X
+    - icon: fontawesome/brands/youtube
+      link: http://www.youtube.com/igsorg
+      name: Youtube
+    - icon: material/email
+      link: "mailto:cb@igs.org"
+
+  alternate:
+    - name: English
+      link: /igs-cors-guidelines/en/ 
+      lang: en
+    - name: China
+      link: /igs-cors-guidelines/cn/ 
+      lang: cn
+    - name: Deutsch
+      link: /igs-cors-guidelines/de/
+      lang: de
+    - name: Français
+      link: /igs-cors-guidelines/fr/
+      lang: fr
