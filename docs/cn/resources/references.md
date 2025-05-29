@@ -6,7 +6,7 @@
 - IGS. (2021). IGS Blank Site Log. Retrieved from https://files.igs.org/pub/station/general/blank.log
 - ICSM. (2020, 12 07). Guideline for Continuously Operating Reference Stations. Retrieved from https://icsm.gov.au/sites/default/files/2020-12/Guideline-for-Continuously-Operating-Reference-Stations_v2.2.pdf
 - Gurtner, W. (2007, 12 10). RINEX 2.11. Retrieved from https://files.igs.org/pub/data/format/rinex211.txt
-Romero, I., & Ruddick, R. (2020, 07 06). RINEX 2.11: Compression Method Clarification Addendum. Retrieved from https://files.igs.org/pub/data/format/Addendum-rinex211.pdf
+- Romero, I., & Ruddick, R. (2020, 07 06). RINEX 2.11: Compression Method Clarification Addendum. Retrieved from https://files.igs.org/pub/data/format/Addendum-rinex211.pdf
 - IGS/RTCM Working Group. (2020, 12 01). RINEX 3.05. (I. Romero, Ed.) Retrieved from https://files.igs.org/pub/data/format/rinex305.pdf
 - IGS/RTCM RINEX Working Group. (2021, 12 01). RINEX 4.00. (I. Romero, Ed.) Retrieved from https://files.igs.org/pub/data/format/rinex_4.00.pdf
 - IGS Real-Time WG/IGS Infrastructure Committee. (2021, 10 01). Guidelines for IGS Real-Time Broadcasters and Stations. Retrieved from https://files.igs.org/pub/resource/pubs/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf
