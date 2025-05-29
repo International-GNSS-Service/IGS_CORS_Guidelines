@@ -1,4 +1,4 @@
-Contributions are more than welcome.
-
-We are looking for people who can translate these guidelines to different languages.
-We aim to be as inclusive as possible.
+- 耿江辉
+- 薛军琛
+- 李浩博
+- 罗鑫磊

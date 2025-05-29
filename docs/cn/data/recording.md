@@ -1,6 +1,6 @@
 &emsp;&emsp;IGS CORS至少需要提供采样率为30秒的单天RINEX观测文件。采样率可以是15秒，但不鼓励。此外，要求测站操作员提供RINEX导航文件[^1].
 
-&emsp;&emsp;建议提供采样率为30秒的RINEX小时文件。鼓励新建的IGS测站尽可能提供采样率为30秒的RINEX小时文件，以及在可行情况下提供15分钟的高采样（1赫兹）RINEX文件（见“高采样数据”节）。
+&emsp;&emsp;建议提供采样率为30秒的RINEX小时文件。鼓励新建的IGS测站尽可能提供采样率为30秒的RINEX小时文件，以及在可行情况下提供15分钟的高采样（1赫兹）RINEX文件（参见第5.1.1节）。
 
 &emsp;&emsp;每个RINEX文件必须发送到至少两个全球IGS数据中心[^2]。若测站已被纳入区域网络（如APREF、EPN、SIRGAS）且数据已公开，则发送到一个全球数据中心即可。数据传输由IGS网络协调员协调管理。
 
@@ -31,7 +31,9 @@
 ## 5.1.2 实时数据
 
 &emsp;&emsp;实时测站除了满足常规IGS测站标准外，还需要以至少1赫兹的采样间隔传输GNSS观测数据流。所有新建IGS测站必须具备实时数据传输能力，除非测站对参考框架有贡献（如与SLR或VLBI测站并置），或位于有地理需求的区域。
-&emsp;&emsp;IGS实时测站需满足的要求详见参考文献的第2节：[Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf)
+
+&emsp;&emsp;IGS实时测站需满足的要求详见文献[Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf)中的第2节“Guidelines for IGS Real-Time
+Broadcasters and Stations（IGS实时广播站与站点指南）”
 
 ## 5.1.3 气象数据
 

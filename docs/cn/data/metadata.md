@@ -29,8 +29,8 @@
 &emsp;&emsp;每个CORS必须提供天线安装位置的四个基本方向（最好每45°拍摄，共8张照片）、标石及其周围环境的照片。在台站发生任何事件或硬件变更后，这些照片应该及时更新。
 照片必须采用以下命名规则进行标记和命名：
 
-`SSSSMRCCC_YYYYMMDD_D[D].fff`
-
+<div align="center">`SSSSMRCCC_YYYYMMDD_D[D].fff`</div>
+<br>
 &emsp;&emsp;下表描述了该规则的各个元素。所有元素之间用下划线（“_”）分隔。
 
 | 组件   | 描述 | 示例 |
