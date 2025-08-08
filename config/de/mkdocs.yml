@@ -1,7 +1,7 @@
 site_name: IGS CORS Guidelines
-site_url: https://igs.git-pages.gfz-potsdam.de/igs-cors-guidelines
-repo_url: https://git.gfz-potsdam.de/igs/igs-cors-guidelines
-repo_name: igs/igs-cors-guidelines
+#site_url: https://igs.git-pages.gfz-potsdam.de/igs-cors-guidelines
+repo_url: https://github.com/International-GNSS-Service/IGS_CORS_Guidelines
+repo_name: IGS_CORS_Guidelines
 copyright: Copyright &copy; 2024 International GNSS Service
 
 docs_dir: '../../docs/de'
@@ -111,9 +111,6 @@ plugins:
       enable_creation_date: true
 extra:
   social:
-    - icon: fontawesome/brands/gitlab
-      link: https://git.gfz-potsdam.de/igs/igs-cors-guidelines
-      name: GitLab
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/igsorg
       name: LinkedIn
