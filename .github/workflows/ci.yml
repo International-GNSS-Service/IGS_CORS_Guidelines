@@ -35,11 +35,18 @@ jobs:
       - name: Build all MkDocs sites
         run: |
           mkdir -p site
-          for config in config/*/mkdocs.yml; do
-            lang=$(basename $(dirname "$config"))
+          DEFAULT_LANG=en
+
+          # Explicitly build default first, then all others
+          langs=($DEFAULT_LANG $(ls config/*/mkdocs.yml | xargs -n1 dirname | xargs -n1 basename | grep -v "$DEFAULT_LANG"))
+          
+          for lang in "${langs[@]}"; do
+            config="config/$lang/mkdocs.yml"
             echo ">>> Building $lang from $config"
-            mkdocs build -f "$config" \
-              -d "site/IGS_CORS_Guidelines/$lang" 
+            
+            # Build site into the correct folder
+            mkdir -p "site/IGS_CORS_Guidelines/$lang"
+            mkdocs build -f "$config" -d "site/IGS_CORS_Guidelines/$lang"
           done
 
       - name: Add root redirect to default language
