@@ -39,8 +39,7 @@ jobs:
             lang=$(basename $(dirname "$config"))
             echo ">>> Building $lang from $config"
             mkdocs build -f "$config" \
-              -d "site/IGS_CORS_Guidelines/$lang" \
-              --site-url "https://international-gnss-service.github.io/IGS_CORS_Guidelines/$lang/"
+              -d "site/IGS_CORS_Guidelines/$lang" 
           done
 
       - name: Add root redirect to default language
