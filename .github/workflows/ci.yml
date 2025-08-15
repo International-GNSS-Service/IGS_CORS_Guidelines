@@ -48,18 +48,18 @@ jobs:
           REDIRECT_DIR="site/IGS_CORS_Guidelines"
           mkdir -p "REDIRECT_DIR"
           cat <<EOF > "$REDIRECT_DIR/index.html"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=./${DEFAULT_LANG}/">
-<title>Redirecting…</title>
-</head>
-<body>
-<p>If you are not redirected automatically, <a href="./${DEFAULT_LANG}/">click here</a>.</p>
-</body>
-</html>
-EOF
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url=./${DEFAULT_LANG}/">
+          <title>Redirecting…</title>
+          </head>
+          <body>
+          <p>If you are not redirected automatically, <a href="./${DEFAULT_LANG}/">click here</a>.</p>
+          </body>
+          </html>
+          EOF
 
       - name: Deploy combined site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
