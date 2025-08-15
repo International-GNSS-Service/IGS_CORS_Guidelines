@@ -32,11 +32,38 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      # Build and deploy each mkdocs.yml
-      - name: Deploy Multiple MkDocs Sites
+      - name: Build all MkDocs sites
         run: |
+          mkdir -p site
           for config in config/*/mkdocs.yml; do
-            echo "Deploying $config..."
-            mkdocs gh-deploy --force --config-file "$config"
+            lang=$(basename $(dirname "$config"))
+            echo ">>> Building $lang from $config"
+            mkdocs build -f "$config" \
+              -d "site/IGS_CORS_Guidelines/$lang" \
+              --site-url "https://international-gnss-service.github.io/IGS_CORS_Guidelines/$lang/"
           done
 
+      - name: Add root redirect to default language
+        run: |
+          DEFAULT_LANG=en
+          REDIRECT_DIR="site/IGS_CORS_Guidelines"
+          cat > "$REDIRECT_DIR/index.html" <<EOF
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=./${DEFAULT_LANG}/">
+            <title>Redirecting…</title>
+          </head>
+          <body>
+            <p>If you are not redirected automatically, <a href="./${DEFAULT_LANG}/">click here</a>.</p>
+          </body>
+          </html>
+          EOF
+
+      - name: Deploy combined site to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
