@@ -46,6 +46,7 @@ jobs:
         run: |
           DEFAULT_LANG=en
           REDIRECT_DIR="site/IGS_CORS_Guidelines"
+          mkdir -p "REDIRECT_DIR"
           cat > "$REDIRECT_DIR/index.html" <<EOF
           <!DOCTYPE html>
           <html lang="en">
