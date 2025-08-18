@@ -6,6 +6,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -45,14 +49,14 @@ jobs:
             echo ">>> Building $lang from $config"
             
             # Build site into the correct folder
-            mkdir -p "site/IGS_CORS_Guidelines/$lang"
-            mkdocs build -f "$config" -d "site/IGS_CORS_Guidelines/$lang"
+            mkdir -p "site/$lang"
+            mkdocs build -f "$config" -d "site/$lang"
           done
 
       - name: Add root redirect to default language
         run: |
           DEFAULT_LANG=en
-          REDIRECT_DIR="site/IGS_CORS_Guidelines"
+          REDIRECT_DIR="site"
           mkdir -p "$REDIRECT_DIR"
           cat <<EOF > "$REDIRECT_DIR/index.html"
           <!DOCTYPE html>
