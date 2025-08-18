@@ -126,14 +126,14 @@ extra:
 
   alternate:
     - name: English
-      link: /igs-cors-guidelines/en/ 
+      link: /IGS_CORS_Guidelines/en/ 
       lang: en
     - name: Deutsch
-      link: /igs-cors-guidelines/de/
+      link: /IGS_CORS_Guidelines/de/
       lang: de
     - name: Français
-      link: /igs-cors-guidelines/fr/
+      link: /IGS_CORS_Guidelines/fr/
       lang: fr
     - name: 中国
-      link: /igs-cors-guidelines/cn/ 
+      link: /IGS_CORS_Guidelines/cn/ 
       lang: zh
