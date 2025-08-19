@@ -38,7 +38,7 @@ theme:
   name: material
   language: en
   custom_dir: '../../overrides/' 
-  logo: ../../en/assets/images/igs_logo.png
+  logo: ../en/assets/images/igs_logo.png
   palette:
     - scheme: slate
       primary: blue
