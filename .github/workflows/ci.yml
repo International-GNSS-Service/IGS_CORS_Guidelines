@@ -30,29 +30,15 @@ jobs:
             mkdocs-material-
 
       - run: pip install -r requirements.txt
-      - run: ls -R site
-      
-      - name: Build all MkDocs sites
+
+      - name: Build English site
         run: |
-          mkdir -p site
-          DEFAULT_LANG=en
-          # List of languages: default first, then all others
-          langs=($DEFAULT_LANG $(ls config/*/mkdocs.yml | xargs -n1 dirname | xargs -n1 basename | grep -v "$DEFAULT_LANG"))
+          mkdir -p site/en
+          mkdocs build -f config/en/mkdocs.yml -d site/en
+          ls -R site  # DEBUG: verify build
 
-          for lang in "${langs[@]}"; do
-            config="config/$lang/mkdocs.yml"
-            echo ">>> Building $lang from $config"
-
-            mkdir -p "site/$lang"
-            mkdocs build -f "$config" -d "site/$lang"
-          done
-
-          # Debug: list final structure
-          ls -R site
-
-      - name: Add root redirect to default language
+      - name: Add root redirect to English
         run: |
-          DEFAULT_LANG=en
           REDIRECT_DIR="site"
           mkdir -p "$REDIRECT_DIR"
           cat <<EOF > "$REDIRECT_DIR/index.html"
@@ -60,18 +46,19 @@ jobs:
           <html lang="en">
           <head>
           <meta charset="utf-8">
-          <meta http-equiv="refresh" content="0; url=./${DEFAULT_LANG}/">
+          <meta http-equiv="refresh" content="0; url=./en/">
           <title>Redirecting…</title>
           </head>
           <body>
-          <p>If you are not redirected automatically, <a href="./${DEFAULT_LANG}/">click here</a>.</p>
+          <p>If you are not redirected automatically, <a href="./en/">click here</a>.</p>
           </body>
           </html>
           EOF
 
-      - name: Deploy combined site to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           force_orphan: true
+
