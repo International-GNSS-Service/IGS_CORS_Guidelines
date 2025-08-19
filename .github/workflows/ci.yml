@@ -60,6 +60,7 @@ jobs:
 
       - name: Add root redirect to default language
         run: |
+          DEFAULT_LANG=en
           REDIRECT_DIR="site"
           mkdir -p "$REDIRECT_DIR"
           cat <<EOF > "$REDIRECT_DIR/index.html"
