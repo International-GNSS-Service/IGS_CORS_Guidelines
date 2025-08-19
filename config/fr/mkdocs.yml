@@ -5,7 +5,7 @@ repo_name: IGS_CORS_Guidelines
 copyright: Copyright &copy; 2024 International GNSS Service
 
 docs_dir: '../../docs/fr'
-site_dir: '../../generated/fr' 
+#site_dir: '../../generated/fr' 
 
 nav:
   - Introduction: index.md
