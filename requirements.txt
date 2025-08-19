@@ -1,4 +1,5 @@
 pymdown-extensions
+mkdocs
 mkdocs-material
 mkdocs-material-extensions
 mkdocs-include-markdown-plugin

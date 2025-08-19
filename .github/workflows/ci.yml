@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ${{ github.workspace }}  # ensures all commands run from repo root
+        working-directory: ${{ github.workspace }}
     steps:
       - uses: actions/checkout@v4
 
@@ -34,24 +34,29 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Debug repo structure
+        run: |
+          echo "Listing docs folder:"
+          ls -R docs
+
       - name: Build all MkDocs sites
         run: |
           mkdir -p site
           DEFAULT_LANG=en
-          # List of languages: default first, then all others
           langs=($DEFAULT_LANG $(ls config/*/mkdocs.yml | xargs -n1 dirname | xargs -n1 basename | grep -v "$DEFAULT_LANG"))
 
           for lang in "${langs[@]}"; do
             config="config/$lang/mkdocs.yml"
             echo ">>> Building $lang from $config"
+            echo "Docs dir in config:"
+            grep docs_dir "$config"
 
             mkdir -p "site/$lang"
-            # build from repo root; output always goes into site/<lang>
             mkdocs build -f "$config" -d "site/$lang" --verbose
-          done
 
-          echo "Final site structure:"
-          ls -R site
+            echo "Site/$lang structure after build:"
+            ls -R "site/$lang"
+          done
 
       - name: Add root redirect to default language
         run: |
