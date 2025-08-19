@@ -13,6 +13,9 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}  # ensures all commands run from repo root
     steps:
       - uses: actions/checkout@v4
 
@@ -31,13 +34,26 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build English site
+      - name: Build all MkDocs sites
         run: |
-          mkdir -p site/en
-          mkdocs build -f config/en/mkdocs.yml -d site/en
-          ls -R site  # DEBUG: verify build
+          mkdir -p site
+          DEFAULT_LANG=en
+          # List of languages: default first, then all others
+          langs=($DEFAULT_LANG $(ls config/*/mkdocs.yml | xargs -n1 dirname | xargs -n1 basename | grep -v "$DEFAULT_LANG"))
 
-      - name: Add root redirect to English
+          for lang in "${langs[@]}"; do
+            config="config/$lang/mkdocs.yml"
+            echo ">>> Building $lang from $config"
+
+            mkdir -p "site/$lang"
+            # build from repo root; output always goes into site/<lang>
+            mkdocs build -f "$config" -d "site/$lang" --verbose
+          done
+
+          echo "Final site structure:"
+          ls -R site
+
+      - name: Add root redirect to default language
         run: |
           REDIRECT_DIR="site"
           mkdir -p "$REDIRECT_DIR"
@@ -46,16 +62,16 @@ jobs:
           <html lang="en">
           <head>
           <meta charset="utf-8">
-          <meta http-equiv="refresh" content="0; url=./en/">
+          <meta http-equiv="refresh" content="0; url=./${DEFAULT_LANG}/">
           <title>Redirecting…</title>
           </head>
           <body>
-          <p>If you are not redirected automatically, <a href="./en/">click here</a>.</p>
+          <p>If you are not redirected automatically, <a href="./${DEFAULT_LANG}/">click here</a>.</p>
           </body>
           </html>
           EOF
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy combined site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
