@@ -30,7 +30,8 @@ jobs:
             mkdocs-material-
 
       - run: pip install -r requirements.txt
-
+      - run: ls -R site
+      
       - name: Build all MkDocs sites
         run: |
           mkdir -p site
