@@ -51,11 +51,11 @@ jobs:
             echo "Docs dir in config:"
             grep docs_dir "$config"
 
-            mkdir -p "site/$lang"
-            mkdocs build -f "$config" -d "site/$lang" --verbose
+            mkdir -p "$PWD/site/$lang"
+            mkdocs build -f "$config" -d "$PWD/site/$lang" --verbose
 
             echo "Site/$lang structure after build:"
-            ls -R "site/$lang"
+            ls -R "$PWD/site/$lang"
           done
 
       - name: Add root redirect to default language
