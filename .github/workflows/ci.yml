@@ -16,11 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
@@ -30,7 +25,7 @@ jobs:
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
-          path: ~/.cache 
+          path: ~/.cache
           restore-keys: |
             mkdocs-material-
 
@@ -40,18 +35,19 @@ jobs:
         run: |
           mkdir -p site
           DEFAULT_LANG=en
-
-          # Explicitly build default first, then all others
+          # List of languages: default first, then all others
           langs=($DEFAULT_LANG $(ls config/*/mkdocs.yml | xargs -n1 dirname | xargs -n1 basename | grep -v "$DEFAULT_LANG"))
-          
+
           for lang in "${langs[@]}"; do
             config="config/$lang/mkdocs.yml"
             echo ">>> Building $lang from $config"
-            
-            # Build site into the correct folder
+
             mkdir -p "site/$lang"
             mkdocs build -f "$config" -d "site/$lang"
           done
+
+          # Debug: list final structure
+          ls -R site
 
       - name: Add root redirect to default language
         run: |
