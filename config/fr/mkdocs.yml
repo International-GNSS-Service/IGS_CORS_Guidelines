@@ -37,8 +37,8 @@ nav:
 theme:
   name: material
   language: fr
-  #custom_dir: '../../overrides/' 
-  logo: assets/images/igs_logo.png
+  custom_dir: '../../overrides/' 
+  logo: ../en/assets/images/igs_logo.png
   palette:
     - scheme: slate
       primary: blue
