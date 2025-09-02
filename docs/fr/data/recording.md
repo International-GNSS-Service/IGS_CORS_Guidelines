@@ -33,7 +33,7 @@ Les stations fournissant des données haute fréquence sont encouragées à four
 
 En plus de répondre aux normes d'une station IGS conventionnelle, les stations temps réel doivent diffuser des données d'observation GNSS avec une fréquence minimum de 1 Hz. Toutes les stations IGS nouvellement proposées doivent être capables de diffuser des données en temps réel, à moins qu'elles ne soient considérées comme utiles au repère de référence terrestre (par exemple, en étant colocalisées avec une station SLR ou VLBI) ou qu'elles soient situées dans une région peu couverte par le réseau IGS.
 
-Les spécifications devant être respectées par une station IGS temps réel sont décrites dans la section 2 des « [Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf) ».
+Les spécifications devant être respectées par une station IGS temps réel sont décrites dans la section 2 des « [Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf) ».
 
 ## Données Météorologiques
 

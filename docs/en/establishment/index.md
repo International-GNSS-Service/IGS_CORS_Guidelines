@@ -18,4 +18,4 @@ It is recommended to identify the usability of a proposed GNSS station in advanc
 - Potential changes to sky visibility from tree growth and development at sites nearby,
 - Site foundation suitability (this may require additional geophysical or structural analysis).
 
-[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf
+[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf

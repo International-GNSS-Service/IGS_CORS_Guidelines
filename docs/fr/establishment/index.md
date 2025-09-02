@@ -19,4 +19,4 @@ Il est recommandé d'évaluer à l'avance à quel point une nouvelle station GNS
 - les changements potentiels de visibilité du ciel (pousse des arbres, constructions proches), et
 - la stabilité du site d'installation (ce qui peut requérir une étude géophysique ou structurelle).
 
-[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf
+[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf

@@ -32,7 +32,7 @@
 
 &emsp;&emsp;实时测站除了满足常规IGS测站标准外，还需要以至少1赫兹的采样间隔传输GNSS观测数据流。所有新建IGS测站必须具备实时数据传输能力，除非测站对参考框架有贡献（如与SLR或VLBI测站并置），或位于有地理需求的区域。
 
-&emsp;&emsp;IGS实时测站需满足的要求详见文献[Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf)中的第2节“Guidelines for IGS Real-Time
+&emsp;&emsp;IGS实时测站需满足的要求详见文献[Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf)中的第2节“Guidelines for IGS Real-Time
 Broadcasters and Stations（IGS实时广播站与站点指南）”
 
 ## 5.1.3 气象数据

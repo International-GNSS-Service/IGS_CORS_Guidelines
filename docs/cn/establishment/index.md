@@ -19,4 +19,4 @@
 - 由于台站附近植被生长和开发而导致的天空可见性潜在变化；
 - 台站地基的适用性（可能需要额外的地球物理或结构分析）。
 
-[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf
+[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf

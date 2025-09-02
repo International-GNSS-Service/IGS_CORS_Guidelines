@@ -19,4 +19,4 @@ Es wird empfohlen, die Nutzbarkeit einer vorgeschlagenen GNSS-Station im Voraus 
 - Potenzielle Veränderungen der Himmelsichtbarkeit durch Baumwachstum und Entwicklungen in der Nähe,
 - Eignung des Standortfundaments (dies kann zusätzliche geophysikalische oder strukturelle Analysen erfordern).
 
-[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf
+[broadcaster-guidelines]: https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf

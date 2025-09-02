@@ -31,7 +31,7 @@ Die Stationen, die an der Bereitstellung von Hochfrequenzdaten teilnehmen, werde
 ## Echtzeitdaten
 
 Neben der Erfüllung der Standards einer herkömmlichen IGS-Station müssen Echtzeitstationen GNSS-Beobachtungsdaten mit einer minimalen Datenintervall von 1 Hz streamen. Alle neu vorgeschlagenen IGS-Stationen müssen in der Lage sein, Daten in Echtzeit zu streamen, es sei denn, sie tragen zum Referenzrahmen bei (z. B. durch Koexistenz mit einer SLR- oder VLBI-Station) oder befinden sich in einer Region mit geografischem Bedarf.
-Die Anforderungen, die von einer IGS-Echtzeitstation erfüllt werden müssen, sind in Abschnitt 2 der [Leitlinien für IGS-Echtzeit-Broadcaster und -Stationen](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf) beschrieben.
+Die Anforderungen, die von einer IGS-Echtzeitstation erfüllt werden müssen, sind in Abschnitt 2 der [Leitlinien für IGS-Echtzeit-Broadcaster und -Stationen](https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf) beschrieben.
 
 ## Meteorologische Daten
 

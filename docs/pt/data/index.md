@@ -1,0 +1,1 @@
+Esta secção apresenta recomendações sobre a fiabilidade, latência e qualidade dos dados registados por uma CORS do IGS. Além disso, descreve o tratamento das alterações de equipamento nos metadados correspondentes da estação.

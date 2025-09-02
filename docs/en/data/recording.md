@@ -31,7 +31,7 @@ The stations participating in the high-rate data provision are encouraged to pro
 ## Real-Time Data
 
 In addition to meeting the standards of a conventional IGS station, Real-Time stations are required to stream GNSS observation data with a minimum data interval of 1 Hz. All newly proposed IGS stations must be able to stream data in real-time unless they are considered to be of value to contribute to the reference frame (e.g., by being co-located to a SLR or VLBI station) or are located in a region of geographical need.
-The recommendations that need to be fulfilled by an IGS Real-Time station are described in section 2 of the [Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines-for-IGS-Real-Time-Broadcasters-and-Stations_v1.0.pdf).
+The recommendations that need to be fulfilled by an IGS Real-Time station are described in section 2 of the [Guidelines for IGS Real-Time Broadcasters and Stations](https://files.igs.org/pub/resource/guidelines/Guidelines_for_IGS_Real_Time_Broadcasters_and_Stations.pdf).
 
 ## Meteorological Data
 
