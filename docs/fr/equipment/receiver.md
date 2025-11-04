@@ -23,6 +23,6 @@ On résume ci-dessous les caractéristiques recommandées pour les récepteurs G
 - Enregistrement des données RINEX (échantillonnage toutes les 30 secondes minimum), si elles ne sont pas générées en dehors du récepteur.
 - Enregistrement des données du capteur d'entrée.
 
-The firmware of a GNSS receiver is a computer software that controls the tracking of the device. As with any other software, a firmware might be updated to either fix bugs or to improve the tracking capabilities of the receiver. Before upgrading, a new firmware should be thoroughly tested and only be considered on stations where it benefits from the change. In general, the receiver should be operated with the latest stable firmware within 6 months of its release.
+Le firmware d'un récepteur GNSS est le logiciel informatique qui contrôle le suivi des signaux GNSS par le récepteur. Comme pour tout autre logiciel, un firmware peut être mis à jour soit pour corriger des bugs, soit pour améliorer les capacités de suivi du récepteur. Avant de procéder à la mise à niveau, un nouveau firmware doit être méticuleusement testé et ne doit être installé que sur les stations qui pourraient bénéficier du changement. En général, le récepteur doit être équipé du firmware stable le plus récent dans les 6 mois suivant sa sortie.
 
 [^1]: Les stations situées dans la zone de couverture des systèmes satellitaires régionaux QZSS et IRNSS doivent également suivre ces derniers. La capacité de suivi SBAS est encouragée.
