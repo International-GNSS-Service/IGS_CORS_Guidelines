@@ -1,0 +1,3 @@
+Con la llegada de nuevos sistemas y señales GNSS y el beneficio reconocido para la sociedad, la tecnología GNSS está evolucionando rápidamente. Los formatos cambian y las versiones de firmware se ajustan y actualizan constantemente. Por lo tanto, es importante encontrar un equilibrio entre tecnología, costo, eficiencia y demanda.
+
+Todos los componentes de hardware de estaciones IGS (receptor, antena y radomo) deben figurar en el archivo [rcvr_ant.tab](https://files.igs.org/pub/station/general/rcvr_ant.tab). Este documento contiene las convenciones de nomenclatura para los equipos GNSS utilizados, con el objeto de identificar de forma única el equipo dentro de varias fuentes (por ejemplo, ANTEX, IGS Site Log, encabezados del RINEX).
