@@ -1,0 +1,1 @@
+Esta sección brinda recomendaciones sobre la confiabilidad, latencia y calidad de los datos registrados por una estación IGS CORS. Además, describe el manejo de cambios de equipo en los metadatos correspondientes de la estación.
