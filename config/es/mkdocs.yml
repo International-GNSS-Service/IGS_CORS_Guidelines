@@ -8,20 +8,20 @@ docs_dir: '../../docs/es'
 #site_dir: '../../generated/es' Este é gerado via GitHub Actions build -d
 
 nav:
-  - Introduction: index.md
+  - Introducción: index.md
   - Resumen: summary.md
-  - Establecimiento y Funcionamiento:
+  - Instalación y Funcionamiento:
     - Descripción General: establishment/index.md
     - Calidad de la Señal: establishment/signals.md
     - Estabilidad del Sitio: establishment/stability.md
     - Alimentación Eléctrica y Comunicaciones: establishment/power_comms.md
-  - Equipamento GNSS:
+  - Equipamiento GNSS:
     - Descripción General: equipment/index.md
     - Receptor GNSS: equipment/receiver.md
     - Antena GNSS: equipment/antenna.md
     - Cable de Antena: equipment/cable.md
     - Sensores Meteorológicos: equipment/meteo_sensors.md
-  - Dados e Metadados:
+  - Datos y Metadatos:
     - Descripción General: data/index.md
     - Seguimiento de la Señal y Registro de Datos: data/recording.md
     - Convenciones de Nomenclatura de Archivos: data/filename.md
