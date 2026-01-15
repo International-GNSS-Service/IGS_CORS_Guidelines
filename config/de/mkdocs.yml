@@ -130,15 +130,15 @@ extra:
     - name: Deutsch
       link: /IGS_CORS_Guidelines/de/
       lang: de
-    - name: Français
-      link: /IGS_CORS_Guidelines/fr/
-      lang: fr
-    - name: 中国
-      link: /IGS_CORS_Guidelines/cn/ 
-      lang: zh
-    - name: Português
-      link: /IGS_CORS_Guidelines/pt/
-      lang: pt
     - name: Español
       link: /IGS_CORS_Guidelines/es/
       lang: es
+    - name: Français
+      link: /IGS_CORS_Guidelines/fr/
+      lang: fr
+    - name: Português
+      link: /IGS_CORS_Guidelines/pt/
+      lang: pt
+    - name: 中国
+      link: /IGS_CORS_Guidelines/cn/ 
+      lang: zh
