@@ -45,13 +45,13 @@ theme:
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Zum hellen Modus wechseln
     - scheme: default
       primary: blue
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Zum dunklen Modus wechseln
   features:
     # - announce.dismiss
     - content.code.annotate
