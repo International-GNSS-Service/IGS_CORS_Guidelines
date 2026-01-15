@@ -1,42 +1,42 @@
-site_name: IGS CORS Guidelines
-site_url: https://international-gnss-service.github.io/IGS_CORS_Guidelines/de/
+site_name: Guía para Estaciones de Referencia de Operación Continua de IGS
+site_url: https://international-gnss-service.github.io/IGS_CORS_Guidelines/es/
 repo_url: https://github.com/International-GNSS-Service/IGS_CORS_Guidelines
 repo_name: IGS_CORS_Guidelines
-copyright: Copyright &copy; 2024 International GNSS Service
+copyright: Copyright &copy; 2026 International GNSS Service
 
-docs_dir: '../../docs/de'
-#site_dir: '../../generated/de' 
+docs_dir: '../../docs/es'
+#site_dir: '../../generated/es' Este é gerado via GitHub Actions build -d
 
 nav:
-  - Einleitung: index.md
-  - Zusammenfassung: summary.md
-  - Aufbau und Betrieb:
-    - Übersicht: establishment/index.md
-    - Signalqualität: establishment/signals.md
-    - Stabilität: establishment/stability.md
-    - Strom und Kommunikation: establishment/power_comms.md
-  - GNSS Equipment:
-    - Übersicht: equipment/index.md
-    - GNSS Empfänger: equipment/receiver.md
-    - GNSS Antennen: equipment/antenna.md
-    - Antennenkabel: equipment/cable.md
-    - Meteorologische Sensoren: equipment/meteo_sensors.md
-  - Daten und Metadaten:
-    - Übersicht: data/index.md
-    - Signal- und Datenaufzeichnung: data/recording.md
-    - Dateinamenkonventionen: data/filename.md
-    - Datenqualität: data/quality.md
-    - Metadaten: data/metadata.md
-    - Ankündigungen: data/announcements.md
-  - Ressourcen:
-    - Changelog: resources/changelog.md
-    - Definitionen: resources/terms.md
-    - Referenzen: resources/references.md
-    - Beitrag: resources/contributions.md
+  - Introduction: index.md
+  - Resumen: summary.md
+  - Establecimiento y Funcionamiento:
+    - Descripción General: establishment/index.md
+    - Calidad de la Señal: establishment/signals.md
+    - Estabilidad del Sitio: establishment/stability.md
+    - Alimentación Eléctrica y Comunicaciones: establishment/power_comms.md
+  - Equipamento GNSS:
+    - Descripción General: equipment/index.md
+    - Receptor GNSS: equipment/receiver.md
+    - Antena GNSS: equipment/antenna.md
+    - Cable de Antena: equipment/cable.md
+    - Sensores Meteorológicos: equipment/meteo_sensors.md
+  - Dados e Metadados:
+    - Descripción General: data/index.md
+    - Seguimiento de la Señal y Registro de Datos: data/recording.md
+    - Convenciones de Nomenclatura de Archivos: data/filename.md
+    - Calidad de los Datos: data/quality.md
+    - Metadatos: data/metadata.md
+    - Anuncios: data/announcements.md
+  - Recursos:
+    - Registro de Cambios: resources/changelog.md
+    - Términos y Definiciones: resources/terms.md
+    - Bibliografía: resources/references.md
+    - Contribuciones: resources/contributions.md
 
 theme:
   name: material
-  language: de
+  language: es
   custom_dir: '../../overrides/' 
   logo: ../en/assets/images/igs_logo.png
   palette:
@@ -45,13 +45,13 @@ theme:
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Cambiar a modo claro
     - scheme: default
       primary: blue
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Cambiar a modo oscuro
   features:
     # - announce.dismiss
     - content.code.annotate
@@ -105,10 +105,11 @@ markdown_extensions:
 plugins:
   - include-markdown
   - search:
-      lang: de
+      lang: en
   - open-in-new-tab
   - git-revision-date-localized:
-      enable_creation_date: true
+      enabled: true
+      fallback_to_build_date: true
 extra:
   social:
     - icon: fontawesome/brands/linkedin

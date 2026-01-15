@@ -139,3 +139,6 @@ extra:
     - name: Português
       link: /IGS_CORS_Guidelines/pt/
       lang: pt
+    - name: Español
+      link: /IGS_CORS_Guidelines/es/
+      lang: es
