@@ -2,7 +2,7 @@ site_name: IGS CORS Guidelines
 site_url: https://international-gnss-service.github.io/IGS_CORS_Guidelines/en/
 repo_url: https://github.com/International-GNSS-Service/IGS_CORS_Guidelines
 repo_name: IGS_CORS_Guidelines
-copyright: Copyright &copy; 2024 International GNSS Service
+copyright: Copyright &copy; 2026 International GNSS Service
 
 docs_dir: '../../docs/en'
 #site_dir: '../../generated/en' This gets generated via GitHub Actions build -d
@@ -140,3 +140,6 @@ extra:
     - name: Português
       link: /IGS_CORS_Guidelines/pt/
       lang: pt
+    - name: Español
+      link: /IGS_CORS_Guidelines/es/
+      lang: es
