@@ -1,6 +1,6 @@
 **IGS Guidelines for Continuously Operating Reference Stations (CORS)**
 
-*Version 1.0.0*
+*Version 1.1.0*
 
 [Join the IGS Network](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
 
