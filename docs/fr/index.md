@@ -1,6 +1,6 @@
 **Directives pour les Stations GNSS Permanentes (CORS) de l’IGS**
 
-*Version 1.0.0-fr*
+*Version 1.1.0-fr*
 
 [Rejoindre le Réseau IGS](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
 

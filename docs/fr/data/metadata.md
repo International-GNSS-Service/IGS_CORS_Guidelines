@@ -1,4 +1,4 @@
-Les métadonnées sont des informations sur le site CORS concernant le propriétaire du site, ses coordonnées, la monumentation du site, sa localisation et l’historique des équipements installés. Des métadonnées fiables et à jour sont essentielles à la gestion et à l'utilisation d'une station GNSS et relèvent de la responsabilité de l'opérateur de la station.
+Les métadonnées sont des informations sur le site CORS concernant le propriétaire du site, ses coordonnées, la monumentation du site, sa localisation et l’historique des équipements installés. Des métadonnées fiables et à jour sont essentielles à la gestion et à l'utilisation d'une station GNSS et relèvent de la responsabilité de l'opérateur de la station. Cependant, le Coordinateur du Réseau IGS se réserve le droit de mettre lui-même à jour les métadonnées d'une station lorsque cela est nécessaire (e.g., correction de métadonnées inexactes, mise à jour du format des site logs) et que l'opérateur de la station n'a pas réagi à des propositions de mise à jour.
 
 ## Site Log IGS / GeodesyML
 

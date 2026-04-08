@@ -1,4 +1,4 @@
-GNSS metadata is the information about the site, including site ownership, contact details, monument information, the site coordinates and a history of the installed equipment. Reliable and current metadata is central to the management and use of a GNSS station, and is the responsibility of the station operator.
+GNSS metadata is the information about the site, including site ownership, contact details, monument information, the site coordinates and a history of the installed equipment. Reliable and current metadata is central to the management and use of a GNSS station, and is the responsibility of the station operator. However, the IGS Network Coordinator reserves the right to update station metadata when this is needed (e.g., correction of inaccurate metadata, site log format update), and the station operator has been unresponsive to proposed changes.
 
 ## IGS Site Log/GeodesyML
 

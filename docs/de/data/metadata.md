@@ -1,4 +1,4 @@
-Die GNSS-Metadaten enthalten Informationen über die Station, einschließlich Eigentumsverhältnissen, Kontaktdaten, Monumentinformationen, die Standortkoordinaten und eine Historie der installierten Ausrüstung. Zuverlässige und aktuelle Metadaten sind für die Verwaltung und Nutzung einer GNSS-Station von zentraler Bedeutung und liegen in der Verantwortung des Stationsbetreibers.
+Die GNSS-Metadaten enthalten Informationen über die Station, einschließlich Eigentumsverhältnissen, Kontaktdaten, Monumentinformationen, die Standortkoordinaten und eine Historie der installierten Ausrüstung. Zuverlässige und aktuelle Metadaten sind für die Verwaltung und Nutzung einer GNSS-Station von zentraler Bedeutung und liegen in der Verantwortung des Stationsbetreibers. Der IGS-Netzwerkkoordinator behält sich jedoch das Recht vor, die Stationsmetadaten zu aktualisieren, wenn dies erforderlich ist (z.B. zur Korrektur ungenauer Metadaten oder bei einer Aktualisierung des Site-Log-Formats), und der Stationsbetreiber auf vorgeschlagene Änderungen nicht reagiert hat.
 
 ## IGS Site Log/GeodesyML
 
