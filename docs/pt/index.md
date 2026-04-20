@@ -1,6 +1,6 @@
 **Diretrizes do IGS para Estações de Referência Operacionais Contínuas (CORS)**
 
-*Versão 1.0.0-pt*
+*Versão 1.1.0-pt*
 
 [Adira à Rede IGS](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
 
