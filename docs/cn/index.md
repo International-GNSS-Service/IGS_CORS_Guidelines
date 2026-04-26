@@ -1,6 +1,6 @@
 **IGS连续运行参考站（CORS）指南**
 
-*版本 1.0.0*
+*版本 1.1.0*
 
 [加入IGS网](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
 
