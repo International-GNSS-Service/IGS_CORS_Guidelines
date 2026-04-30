@@ -1,4 +1,4 @@
-Os metadados GNSS são a informação sobre o local, incluindo a propriedade, contactos, informações sobre o monumento, as coordenadas do local e um historial do equipamento instalado. Metadados fiáveis e actualizados são essenciais para a gestão e utilização de uma estação GNSS e são da responsabilidade do operador da estação.
+Os metadados GNSS são a informação sobre o local, incluindo a propriedade, contactos, informações sobre o monumento, as coordenadas do local e um historial do equipamento instalado. Metadados fiáveis e actualizados são essenciais para a gestão e utilização de uma estação GNSS e são da responsabilidade do operador da estação. No entanto, o Coordenador da Rede IGS reserva-se o direito de atualizar os metadados da estação se necessário (p. ex., correção de metadados imprecisos, atualização do formato do site log), caso o operador da estação não tenha reagido ao pedido de realizar as alterações propostas.
 
 ## Registo de Estação IGS/GeodesyML
 
