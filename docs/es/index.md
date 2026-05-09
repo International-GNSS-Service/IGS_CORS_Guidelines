@@ -1,6 +1,6 @@
 **Guía para Estaciones de Referencia de Operación Continua de IGS**
 
-*Versión 1.0.0-es*
+*Versión 1.1.0-es*
 
 [Unirse a la Red IGS](https://igs.org/network-resources/#propose-new-site){ .md-button .md-button--primary }
 
